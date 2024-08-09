@@ -1,6 +1,5 @@
 package br.com.infratec.util.rsql;
 
-import br.com.infratec.enums.StatusProcessamento;
 import br.com.infratec.exception.PossibleSqlInjectionAttackException;
 import br.com.infratec.util.rsql.constant.RSQLSearchOperation;
 import com.github.rkpunjal.sqlsafe.SqlSafeUtil;
@@ -162,9 +161,9 @@ public class RSQLSpecification<T> implements Specification<T> {
 
     private Object retreiveEnumClass(final Class<? extends Object> type, final String argument) {
 
-        if (type.getSimpleName().equalsIgnoreCase(StatusProcessamento.class.getSimpleName())) {
-            return Enum.valueOf(StatusProcessamento.class, argument.toUpperCase());
-        }
+//        if (type.getSimpleName().equalsIgnoreCase(StatusProcessamento.class.getSimpleName())) {
+//            return Enum.valueOf(StatusProcessamento.class, argument.toUpperCase());
+//        }
 
         return null;
     }
