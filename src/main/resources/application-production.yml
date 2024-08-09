@@ -3,25 +3,15 @@ spring:
 
     sales:
       driver-class-name: org.postgresql.Driver
-      url: jdbc:postgresql://localhost:5432/meli
-      username: postgres
-      password: Tutuba@4754
+      url: jdbc:postgresql://localhost:5432/infratec
+      username: infratec
+      password: infratec@4754
       hikari:
         data-source-properties:
           lc_ctype: UTF8
           format_sql: true
           show-sql: true
 
-    erp:
-      driver-class-name: org.firebirdsql.jdbc.FBDriver
-      url: jdbc:firebirdsql://192.168.2.150:3050/h:/asr/master/banco/MASTER.FDB
-      username: SYSDBA
-      password: masterkey
-      hikari:
-        data-source-properties:
-          lc_ctype: iso8859_1
-          format_sql: true
-          show-sql: true
 
 logging:
 

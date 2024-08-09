@@ -11,9 +11,9 @@ spring:
 
     sales:
       driver-class-name: org.postgresql.Driver
-      url: jdbc:postgresql://localhost:5434/meli
-      username: meli
-      password: meli
+      url: jdbc:postgresql://localhost:5434/infratec
+      username: infratec
+      password: infratec
       hikari:
         data-source-properties:
           lc_ctype: UTF8
@@ -64,7 +64,7 @@ spring:
 
 logging:
   file:
-    name: meli-sales.log
+    name: infratec-sales.log
 
 br:
   com:
@@ -85,7 +85,3 @@ server:
 
 application:
   name: '@project.name@'
-  services:
-    meli-api-url: "https://api.mercadolibre.com"
-    viaCep-api-url: "https://viacep.com.br"
-  cron-processamento: "0 */15 * * * *"
