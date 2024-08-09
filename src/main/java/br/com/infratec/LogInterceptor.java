@@ -1,6 +1,6 @@
 package br.com.infratec;
 
-import br.com.infratec.service.sales.LogService;
+import br.com.infratec.service.LogService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;

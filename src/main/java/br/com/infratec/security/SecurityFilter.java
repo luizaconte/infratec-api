@@ -45,7 +45,7 @@ public class SecurityFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws IOException {
         String token = request.getHeader(HttpHeaders.AUTHORIZATION);
         try {
-            TubaraoAuthentication authentication = new TubaraoAuthentication(extractPrincipal(token));
+            InfraTecAuthentication authentication = new InfraTecAuthentication(extractPrincipal(token));
             SecurityContextHolder.getContext().setAuthentication(authentication);
             filterChain.doFilter(request, response);
         } catch (Exception e) {

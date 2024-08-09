@@ -1,8 +1,8 @@
 package br.com.infratec.security;
 
 import br.com.infratec.exception.ZCException;
-import br.com.infratec.model.sales.TbUsuarioChave;
-import br.com.infratec.repository.sales.UsuarioChaveRepository;
+import br.com.infratec.model.TbUsuarioChave;
+import br.com.infratec.repository.UsuarioChaveRepository;
 import br.com.infratec.util.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

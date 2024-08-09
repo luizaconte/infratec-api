@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+
+  postgres:
+    container_name: infratec_db
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: infratec
+      POSTGRES_PASSWORD: infratec
+      PGDATA: /data/postgres
+    volumes:
+      - postgres-db:/data/postgres
+    ports:
+      - "5434:5432"
+volumes:
+  postgres-db:
+    driver: local

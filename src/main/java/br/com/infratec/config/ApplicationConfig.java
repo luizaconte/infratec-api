@@ -1,7 +1,7 @@
 package br.com.infratec.config;
 
 import br.com.infratec.security.ApplicationAuditAware;
-import br.com.infratec.service.sales.AuthUserDetailsService;
+import br.com.infratec.service.AuthUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

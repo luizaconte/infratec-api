@@ -2,14 +2,12 @@ package br.com.infratec.util;
 
 import br.com.infratec.dto.UsuarioDTO;
 import br.com.infratec.exception.ZCException;
-import br.com.infratec.security.TubaraoAuthentication;
+import br.com.infratec.security.InfraTecAuthentication;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.auth0.jwt.interfaces.Claim;
-import com.auth0.jwt.interfaces.DecodedJWT;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -18,7 +16,6 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
-import java.util.Map;
 import java.util.Random;
 import java.util.TimeZone;
 
@@ -108,7 +105,7 @@ public class JwtService {
     }
 
     public static String getLogin() {
-        TubaraoAuthentication authentication = (TubaraoAuthentication) SecurityContextHolder.getContext().getAuthentication();
+        InfraTecAuthentication authentication = (InfraTecAuthentication) SecurityContextHolder.getContext().getAuthentication();
         return authentication.getPrincipal().getName();
     }
 }

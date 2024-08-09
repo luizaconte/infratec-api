@@ -1,0 +1,91 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      location: /tmp
+      max-file-size: 50MB
+      max-request-size: 75MB
+      file-size-threshold: 2KB
+
+  datasource:
+
+    sales:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5434/meli
+      username: meli
+      password: meli
+      hikari:
+        data-source-properties:
+          lc_ctype: UTF8
+          format_sql: true
+          show-sql: true
+
+    erp:
+      driver-class-name: org.firebirdsql.jdbc.FBDriver
+      url: jdbc:firebirdsql://localhost:3055//firebird/data/MASTER.FDB
+      username: SYSDBA
+      password: masterkey
+      hikari:
+        data-source-properties:
+          lc_ctype: UTF8
+          format_sql: true
+          show-sql: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    properties:
+      hibernate:
+        order_updates: true
+        jdbc:
+          batch_versioned_data: true
+          batch_size: 5
+        event:
+          merge:
+            entity_copy_observer: allow
+
+  profiles:
+    active: @spring.profiles.active@
+
+  jackson:
+    default-property-inclusion: non_null
+
+  web:
+    resources:
+      cache:
+        cachecontrol:
+          max-age: 120
+          must-revalidate: true
+
+  liquibase:
+    change-log: classpath:db/changelog/changelog.sql
+  webservices:
+    path: /api/v1
+
+logging:
+  file:
+    name: meli-sales.log
+
+br:
+  com:
+    zc:
+      swagger:
+        name: @project.name@
+        version: @project.version@
+        description: @project.description@
+
+server:
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
+  http2:
+    enabled: true
+
+
+application:
+  name: '@project.name@'
+  services:
+    meli-api-url: "https://api.mercadolibre.com"
+    viaCep-api-url: "https://viacep.com.br"
+  cron-processamento: "0 */15 * * * *"

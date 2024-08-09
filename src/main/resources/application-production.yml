@@ -1,0 +1,39 @@
+spring:
+  datasource:
+
+    sales:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/meli
+      username: postgres
+      password: Tutuba@4754
+      hikari:
+        data-source-properties:
+          lc_ctype: UTF8
+          format_sql: true
+          show-sql: true
+
+    erp:
+      driver-class-name: org.firebirdsql.jdbc.FBDriver
+      url: jdbc:firebirdsql://192.168.2.150:3050/h:/asr/master/banco/MASTER.FDB
+      username: SYSDBA
+      password: masterkey
+      hikari:
+        data-source-properties:
+          lc_ctype: iso8859_1
+          format_sql: true
+          show-sql: true
+
+logging:
+
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.ws.client.MessageTracing: TRACE
+    org.springframework.ws.client.MessageTracing.sent: TRACE
+    org.springframework.ws.server.MessageTracing.sent: TRACE
+    org.springframework.ws.client.MessageTracing.received: TRACE
+    org.springframework.ws.server.MessageTracing.received: TRACE
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.springframework.web.HttpLogging: TRACE
+    org.hibernate.SQL: DEBUG
+    org.springframework.transaction: DEBUG
+    org.hibernate.type.descriptor.sql: DEBUG

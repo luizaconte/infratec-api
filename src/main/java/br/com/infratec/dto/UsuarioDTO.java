@@ -1,6 +1,6 @@
 package br.com.infratec.dto;
 
-import br.com.infratec.model.sales.TbUsuario;
+import br.com.infratec.model.TbUsuario;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Builder;

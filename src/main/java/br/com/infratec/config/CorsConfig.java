@@ -13,9 +13,7 @@ public class CorsConfig implements WebMvcConfigurer {
     };
 
     private static final String[] allowedOriginPatterns = {
-            "https://*.tubarao.app.br*",
             "http://localhost:4200*",
-            "http://186.225.139.194*"
     };
 
 

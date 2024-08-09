@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+  ssl:
+    enabled: false
+
+spring:
+  datasource:
+    sales:
+      hikari:
+        data-source-properties:
+          show-sql: true
+
+    erp:
+      hikari:
+        data-source-properties:
+          show-sql: true
+
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+
+logging:
+
+  level:
+    org.springframework.web: DEBUG
+    org.springframework.ws.client.MessageTracing: TRACE
+    org.springframework.ws.client.MessageTracing.sent: TRACE
+    org.springframework.ws.server.MessageTracing.sent: TRACE
+    org.springframework.ws.client.MessageTracing.received: TRACE
+    org.springframework.ws.server.MessageTracing.received: TRACE
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.springframework.web.HttpLogging: TRACE
+    org.hibernate.SQL: DEBUG
+    org.springframework.transaction: DEBUG
+    org.hibernate.type.descriptor.sql: DEBUG
+
