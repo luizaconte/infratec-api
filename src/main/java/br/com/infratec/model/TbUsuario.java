@@ -24,6 +24,10 @@ public class TbUsuario {
     @Column(name = "nome", nullable = false, length = 100)
     private String nome;
 
+    @Size(max = 50)
+    @Column(name = "cargo", nullable = true, length = 50)
+    private String cargo;
+
     @Size(max = 30)
     @NotNull
     @Column(name = "login", nullable = false, length = 30)
@@ -54,5 +58,10 @@ public class TbUsuario {
     @Size(max = 30)
     @Column(name = "login_alteracao", length = 30)
     private String loginAlteracao;
+
+    @NotNull
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "id_departamento", nullable = false)
+    private TbDepartamento departamento;
 
 }
