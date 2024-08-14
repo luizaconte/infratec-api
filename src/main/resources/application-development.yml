@@ -6,7 +6,7 @@ server:
 
 spring:
   datasource:
-    sales:
+    infratec:
       hikari:
         data-source-properties:
           show-sql: true

@@ -9,19 +9,19 @@ import org.springframework.context.annotation.Primary;
 import javax.sql.DataSource;
 
 @Configuration
-public class SalesDatasourceConfiguration {
+public class InfraTecDatasourceConfiguration {
 
-    @Bean(name = "salesProperties")
-    @ConfigurationProperties("spring.datasource.sales")
-    public DataSourceProperties salesDataSourceProperties() {
+    @Bean(name = "infratecProperties")
+    @ConfigurationProperties("spring.datasource.infratec")
+    public DataSourceProperties infratecDataSourceProperties() {
         return new DataSourceProperties();
     }
 
     @Primary
-    @Bean(name = "salesDatasource")
-    @ConfigurationProperties(prefix = "spring.datasource.sales.hikari")
-    public DataSource salesDatasource() {
-        return salesDataSourceProperties()
+    @Bean(name = "infratecDatasource")
+    @ConfigurationProperties(prefix = "spring.datasource.infratec.hikari")
+    public DataSource infratecDatasource() {
+        return infratecDataSourceProperties()
                 .initializeDataSourceBuilder()
                 .build();
     }

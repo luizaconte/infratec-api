@@ -9,7 +9,7 @@ spring:
 
   datasource:
 
-    sales:
+    infratec:
       driver-class-name: org.postgresql.Driver
       url: jdbc:postgresql://localhost:5434/infratec
       username: infratec
@@ -64,7 +64,7 @@ spring:
 
 logging:
   file:
-    name: infratec-sales.log
+    name: infratec.log
 
 br:
   com:

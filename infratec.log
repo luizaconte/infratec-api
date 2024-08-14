@@ -1,0 +1,62 @@
+2024-08-13T21:10:56.598-03:00  INFO 10016 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 10016 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
+2024-08-13T21:10:56.602-03:00  INFO 10016 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
+2024-08-13T21:10:56.703-03:00  INFO 10016 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-13T21:10:56.704-03:00  INFO 10016 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-13T21:10:56.758-03:00  INFO 10016 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
+2024-08-13T21:11:00.140-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
+2024-08-13T21:11:00.168-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
+2024-08-13T21:11:01.118-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
+2024-08-13T21:11:01.119-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
+2024-08-13T21:11:01.634-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
+2024-08-13T21:11:04.109-03:00  INFO 10016 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-13T21:11:04.391-03:00  INFO 10016 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 268 ms. Found 3 JPA repository interfaces.
+2024-08-13T21:11:06.248-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-13T21:11:06.268-03:00  INFO 10016 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-13T21:11:06.269-03:00  INFO 10016 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-13T21:11:06.369-03:00  INFO 10016 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-13T21:11:06.369-03:00  INFO 10016 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3514 ms
+2024-08-13T21:11:07.309-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
+2024-08-13T21:11:07.971-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2024-08-13T21:11:08.095-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-13T21:11:08.233-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2024-08-13T21:11:08.237-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.command                        : Using deploymentId: 3594268236
+2024-08-13T21:11:08.240-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-13T21:11:08.251-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::1::luiza
+2024-08-13T21:11:08.300-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
+2024-08-13T21:11:08.306-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::1::luiza ran successfully in 54ms
+2024-08-13T21:11:08.318-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::2::luiza
+2024-08-13T21:11:08.340-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
+2024-08-13T21:11:08.345-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::2::luiza ran successfully in 26ms
+2024-08-13T21:11:08.353-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::3::luiza
+2024-08-13T21:11:08.379-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
+2024-08-13T21:11:08.384-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::3::luiza ran successfully in 30ms
+2024-08-13T21:11:08.399-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2024-08-13T21:11:08.399-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Run:                          3
+2024-08-13T21:11:08.399-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               0
+2024-08-13T21:11:08.399-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
+2024-08-13T21:11:08.400-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
+2024-08-13T21:11:08.400-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            3
+2024-08-13T21:11:08.402-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
+2024-08-13T21:11:08.407-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.command                        : Update command completed successfully.
+2024-08-13T21:11:08.407-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 3
+2024-08-13T21:11:08.418-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2024-08-13T21:11:08.422-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
+2024-08-13T21:11:08.610-03:00  INFO 10016 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-13T21:11:08.749-03:00  INFO 10016 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-13T21:11:08.821-03:00  INFO 10016 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-13T21:11:09.519-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-13T21:11:09.572-03:00  INFO 10016 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-13T21:11:09.625-03:00  INFO 10016 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32a9b4a7
+2024-08-13T21:11:09.627-03:00  INFO 10016 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-13T21:11:09.689-03:00  WARN 10016 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-13T21:11:11.649-03:00  INFO 10016 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-13T21:11:11.656-03:00  INFO 10016 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-13T21:11:12.810-03:00  INFO 10016 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-08-13T21:11:12.811-03:00  WARN 10016 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-13T21:11:13.225-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-08-13T21:11:14.093-03:00  INFO 10016 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
+2024-08-13T21:11:14.095-03:00  INFO 10016 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@5fc6265b]}
+2024-08-13T21:11:14.100-03:00  INFO 10016 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
+2024-08-13T21:11:14.463-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-13T21:11:14.618-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-13T21:11:14.633-03:00  INFO 10016 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 18.975 seconds (process running for 22.032)
