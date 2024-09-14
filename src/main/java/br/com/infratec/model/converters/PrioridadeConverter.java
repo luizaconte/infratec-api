@@ -3,7 +3,6 @@ package br.com.infratec.model.converters;
 import br.com.infratec.enums.Prioridade;
 import jakarta.persistence.AttributeConverter;
 
-import java.util.Arrays;
 import java.util.Objects;
 import java.util.Optional;
 

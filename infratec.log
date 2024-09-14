@@ -1,195 +1,182 @@
-2024-08-13T21:10:56.598-03:00  INFO 10016 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 10016 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
-2024-08-13T21:10:56.602-03:00  INFO 10016 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
-2024-08-13T21:10:56.703-03:00  INFO 10016 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-13T21:10:56.704-03:00  INFO 10016 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-13T21:10:56.758-03:00  INFO 10016 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
-2024-08-13T21:11:00.140-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
-2024-08-13T21:11:00.168-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
-2024-08-13T21:11:01.118-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
-2024-08-13T21:11:01.119-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
-2024-08-13T21:11:01.634-03:00  INFO 10016 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
-2024-08-13T21:11:04.109-03:00  INFO 10016 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-13T21:11:04.391-03:00  INFO 10016 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 268 ms. Found 3 JPA repository interfaces.
-2024-08-13T21:11:06.248-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T21:11:06.268-03:00  INFO 10016 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T21:11:06.269-03:00  INFO 10016 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T21:11:06.369-03:00  INFO 10016 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T21:11:06.369-03:00  INFO 10016 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3514 ms
-2024-08-13T21:11:07.309-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
-2024-08-13T21:11:07.971-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
-2024-08-13T21:11:08.095-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:11:08.233-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2024-08-13T21:11:08.237-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.command                        : Using deploymentId: 3594268236
-2024-08-13T21:11:08.240-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:11:08.251-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::1::luiza
-2024-08-13T21:11:08.300-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:11:08.306-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::1::luiza ran successfully in 54ms
-2024-08-13T21:11:08.318-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::2::luiza
-2024-08-13T21:11:08.340-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:11:08.345-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::2::luiza ran successfully in 26ms
-2024-08-13T21:11:08.353-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::3::luiza
-2024-08-13T21:11:08.379-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:11:08.384-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::3::luiza ran successfully in 30ms
-2024-08-13T21:11:08.399-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2024-08-13T21:11:08.399-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Run:                          3
-2024-08-13T21:11:08.399-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               0
-2024-08-13T21:11:08.399-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
-2024-08-13T21:11:08.400-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
-2024-08-13T21:11:08.400-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            3
-2024-08-13T21:11:08.402-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
-2024-08-13T21:11:08.407-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.command                        : Update command completed successfully.
-2024-08-13T21:11:08.407-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 3
-2024-08-13T21:11:08.418-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2024-08-13T21:11:08.422-03:00  INFO 10016 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
-2024-08-13T21:11:08.610-03:00  INFO 10016 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-13T21:11:08.749-03:00  INFO 10016 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-13T21:11:08.821-03:00  INFO 10016 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-13T21:11:09.519-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-13T21:11:09.572-03:00  INFO 10016 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-13T21:11:09.625-03:00  INFO 10016 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32a9b4a7
-2024-08-13T21:11:09.627-03:00  INFO 10016 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-13T21:11:09.689-03:00  WARN 10016 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-13T21:11:11.649-03:00  INFO 10016 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-13T21:11:11.656-03:00  INFO 10016 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:11:12.810-03:00  INFO 10016 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-08-13T21:11:12.811-03:00  WARN 10016 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-08-13T21:11:13.225-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-08-13T21:11:14.093-03:00  INFO 10016 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
-2024-08-13T21:11:14.095-03:00  INFO 10016 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@5fc6265b]}
-2024-08-13T21:11:14.100-03:00  INFO 10016 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
-2024-08-13T21:11:14.463-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-13T21:11:14.618-03:00  INFO 10016 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-13T21:11:14.633-03:00  INFO 10016 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 18.975 seconds (process running for 22.032)
-2024-08-13T21:26:27.438-03:00  INFO 10016 --- [infratec] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:26:27.491-03:00  INFO 10016 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-13T21:26:27.506-03:00  INFO 10016 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-13T21:26:36.749-03:00  INFO 28308 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 28308 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
-2024-08-13T21:26:36.752-03:00  INFO 28308 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
-2024-08-13T21:26:36.824-03:00  INFO 28308 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-13T21:26:36.825-03:00  INFO 28308 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-13T21:26:36.856-03:00  INFO 28308 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
-2024-08-13T21:26:38.983-03:00  INFO 28308 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
-2024-08-13T21:26:38.994-03:00  INFO 28308 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
-2024-08-13T21:26:39.864-03:00  INFO 28308 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
-2024-08-13T21:26:39.864-03:00  INFO 28308 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
-2024-08-13T21:26:40.384-03:00  INFO 28308 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
-2024-08-13T21:26:42.196-03:00  INFO 28308 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-13T21:26:42.430-03:00  INFO 28308 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 224 ms. Found 3 JPA repository interfaces.
-2024-08-13T21:26:44.003-03:00  INFO 28308 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T21:26:44.025-03:00  INFO 28308 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T21:26:44.025-03:00  INFO 28308 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T21:26:44.102-03:00  INFO 28308 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T21:26:44.103-03:00  INFO 28308 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2800 ms
-2024-08-13T21:26:44.814-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
-2024-08-13T21:26:45.426-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:26:45.535-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2024-08-13T21:26:45.538-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.command                        : Using deploymentId: 3595205537
-2024-08-13T21:26:45.541-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:26:45.549-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::4::luiza
-2024-08-13T21:26:45.588-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:26:45.595-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::4::luiza ran successfully in 43ms
-2024-08-13T21:26:45.606-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::5::luiza
-2024-08-13T21:26:45.620-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:26:45.625-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::5::luiza ran successfully in 17ms
-2024-08-13T21:26:45.633-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::6::luiza
-2024-08-13T21:26:45.653-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:26:45.657-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::6::luiza ran successfully in 23ms
-2024-08-13T21:26:45.666-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::7::luiza
-2024-08-13T21:26:45.694-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:26:45.700-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::7::luiza ran successfully in 32ms
-2024-08-13T21:26:45.717-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2024-08-13T21:26:45.717-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.util                           : Run:                          4
-2024-08-13T21:26:45.717-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               3
-2024-08-13T21:26:45.717-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
-2024-08-13T21:26:45.717-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
-2024-08-13T21:26:45.717-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            7
-2024-08-13T21:26:45.718-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
-2024-08-13T21:26:45.722-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.command                        : Update command completed successfully.
-2024-08-13T21:26:45.723-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 6
-2024-08-13T21:26:45.733-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2024-08-13T21:26:45.736-03:00  INFO 28308 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
-2024-08-13T21:26:45.851-03:00  INFO 28308 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-13T21:26:46.002-03:00  INFO 28308 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-13T21:26:46.082-03:00  INFO 28308 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-13T21:26:46.692-03:00  INFO 28308 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-13T21:26:46.749-03:00  INFO 28308 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-13T21:26:46.795-03:00  INFO 28308 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@695bee1d
-2024-08-13T21:26:46.798-03:00  INFO 28308 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-13T21:26:46.846-03:00  WARN 28308 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-13T21:26:48.317-03:00  INFO 28308 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-13T21:26:48.322-03:00  INFO 28308 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:26:49.041-03:00  INFO 28308 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-08-13T21:26:49.042-03:00  WARN 28308 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-08-13T21:26:49.274-03:00  INFO 28308 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-08-13T21:26:49.819-03:00  INFO 28308 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
-2024-08-13T21:26:49.820-03:00  INFO 28308 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@5d62e554]}
-2024-08-13T21:26:49.823-03:00  INFO 28308 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
-2024-08-13T21:26:50.017-03:00  INFO 28308 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-13T21:26:50.127-03:00  INFO 28308 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-13T21:26:50.141-03:00  INFO 28308 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 14.082 seconds (process running for 16.617)
-2024-08-13T21:32:22.407-03:00  INFO 28308 --- [infratec] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:32:22.412-03:00  INFO 28308 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-13T21:32:22.424-03:00  INFO 28308 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-13T21:32:28.634-03:00  INFO 28268 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 28268 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
-2024-08-13T21:32:28.636-03:00  INFO 28268 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
-2024-08-13T21:32:28.684-03:00  INFO 28268 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-13T21:32:28.685-03:00  INFO 28268 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-13T21:32:28.713-03:00  INFO 28268 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
-2024-08-13T21:32:30.564-03:00  INFO 28268 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
-2024-08-13T21:32:30.569-03:00  INFO 28268 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
-2024-08-13T21:32:31.118-03:00  INFO 28268 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
-2024-08-13T21:32:31.119-03:00  INFO 28268 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
-2024-08-13T21:32:31.634-03:00  INFO 28268 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
-2024-08-13T21:32:33.501-03:00  INFO 28268 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-13T21:32:33.662-03:00  INFO 28268 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 3 JPA repository interfaces.
-2024-08-13T21:32:34.898-03:00  INFO 28268 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T21:32:34.921-03:00  INFO 28268 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T21:32:34.922-03:00  INFO 28268 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T21:32:35.016-03:00  INFO 28268 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T21:32:35.016-03:00  INFO 28268 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2549 ms
-2024-08-13T21:32:35.671-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
-2024-08-13T21:32:36.255-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:32:36.295-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.changelog                      : Change failed validation!
-2024-08-13T21:32:36.297-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.command                        : Logging exception.
-2024-08-13T21:32:36.298-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.ui                             : ERROR: Exception Details
-2024-08-13T21:32:36.298-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Class:  ValidationFailedException
-2024-08-13T21:32:36.298-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Reason:  Validation Failed:
-     1 changesets check sum
-          db/changelog/changelog.sql::7::luiza was: 9:7232b14be6599e578e5f852dd11d545e but is now: 9:2912c30149eb4014dc3202fe89fc7097
+2024-08-19T21:14:35.230-03:00  INFO 9564 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 9564 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
+2024-08-19T21:14:35.242-03:00  INFO 9564 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
+2024-08-19T21:14:35.308-03:00  INFO 9564 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-19T21:14:35.309-03:00  INFO 9564 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-19T21:14:35.334-03:00  INFO 9564 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
+2024-08-19T21:14:36.348-03:00 ERROR 9564 --- [infratec] [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-2024-08-13T21:32:36.299-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Source:  4.27.0
-2024-08-13T21:32:36.299-03:00  INFO 28268 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
-2024-08-13T21:32:36.303-03:00 ERROR 28268 --- [infratec] [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes\br\com\infratec\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'authUserDetailsService' defined in file [C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes\br\com\infratec\service\AuthUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'usuarioRepository' defined in br.com.infratec.repository.UsuarioRepository defined in @EnableJpaRepositories declared on InfraTecJpaConfiguration: Cannot resolve reference to bean 'jpaSharedEM_infratecEntityManagerFactory' while setting bean property 'entityManager'
-2024-08-13T21:32:36.332-03:00  INFO 28268 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2024-08-13T21:32:36.336-03:00  WARN 28268 --- [infratec] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
-2024-08-13T21:32:36.345-03:00  INFO 28268 --- [infratec] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-08-13T21:32:36.370-03:00 ERROR 28268 --- [infratec] [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.context.ApplicationContextException: Unable to start web server
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-6.1.11.jar:6.1.11]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+org.springframework.boot.docker.compose.core.DockerNotRunningException: Docker is not running
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerCommand(DockerCli.java:146) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.<init>(DockerCli.java:129) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.core.DockerCli.lambda$new$0(DockerCli.java:65) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1228) ~[na:na]
+	at org.springframework.boot.docker.compose.core.DockerCli.<init>(DockerCli.java:64) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.core.DockerCompose.get(DockerCompose.java:92) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.getDockerCompose(DockerComposeLifecycleManager.java:156) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:111) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.2.jar:3.3.2]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:433) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.3.2.jar:3.3.2]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
 	at br.com.infratec.InfratecApplication.main(InfratecApplication.java:10) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.3.2.jar:3.3.2]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.3.2.jar:3.3.2]
-	... 11 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes\br\com\infratec\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'authUserDetailsService' defined in file [C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes\br\com\infratec\service\AuthUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'usuarioRepository' defined in br.com.infratec.repository.UsuarioRepository defined in @EnableJpaRepositories declared on InfraTecJpaConfiguration: Cannot resolve reference to bean 'jpaSharedEM_infratecEntityManagerFactory' while setting bean property 'entityManager'
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.11.jar:6.1.11]
+Caused by: org.springframework.boot.docker.compose.core.ProcessExitException: 'docker version --format {{.Client.Version}}' failed with exit code 1.
+
+Stdout:
+25.0.3
+
+
+Stderr:
+error during connect: this error may indicate that the docker daemon is not running: Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/version": open //./pipe/docker_engine: The system cannot find the file specified.
+
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:96) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:74) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	at org.springframework.boot.docker.compose.core.DockerCli$DockerCommands.getDockerCommand(DockerCli.java:135) ~[spring-boot-docker-compose-3.3.2.jar:3.3.2]
+	... 28 common frames omitted
+
+2024-08-19T21:15:13.599-03:00  INFO 14052 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 14052 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
+2024-08-19T21:15:13.603-03:00  INFO 14052 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
+2024-08-19T21:15:13.673-03:00  INFO 14052 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-19T21:15:13.673-03:00  INFO 14052 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-19T21:15:13.707-03:00  INFO 14052 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
+2024-08-19T21:15:16.813-03:00  INFO 14052 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
+2024-08-19T21:15:16.834-03:00  INFO 14052 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
+2024-08-19T21:15:18.134-03:00  INFO 14052 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
+2024-08-19T21:15:18.134-03:00  INFO 14052 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
+2024-08-19T21:15:18.660-03:00  INFO 14052 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
+2024-08-19T21:15:20.634-03:00  INFO 14052 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-19T21:15:20.879-03:00  INFO 14052 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 233 ms. Found 3 JPA repository interfaces.
+2024-08-19T21:15:22.452-03:00  INFO 14052 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-19T21:15:22.470-03:00  INFO 14052 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-19T21:15:22.470-03:00  INFO 14052 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19T21:15:22.542-03:00  INFO 14052 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-19T21:15:22.542-03:00  INFO 14052 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2857 ms
+2024-08-19T21:15:23.218-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
+2024-08-19T21:15:23.736-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-19T21:15:23.851-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2024-08-19T21:15:23.854-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.command                        : Using deploymentId: 4112923854
+2024-08-19T21:15:23.857-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-19T21:15:23.868-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::4::luiza
+2024-08-19T21:15:23.906-03:00 ERROR 14052 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::4::luiza encountered an exception.
+
+liquibase.exception.DatabaseException: ERROR: relation "tb_departamento" already exists [Failed SQL: (0) CREATE TABLE tb_departamento
+(
+    id              bigserial       NOT NULL,
+    nome            varchar(100) NOT NULL,
+    CONSTRAINT tb_departamento_pk PRIMARY KEY (id)
+)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:473) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:80) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:182) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1176) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:764) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:119) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:133) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:122) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:260) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:112) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:110) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:219) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:245) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1436) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:234) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:212) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:297) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:249) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:242) ~[liquibase-core-4.27.0.jar:na]
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.2.jar:3.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
@@ -231,85 +218,74 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
 	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.3.2.jar:3.3.2]
-	... 16 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authUserDetailsService' defined in file [C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes\br\com\infratec\service\AuthUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'usuarioRepository' defined in br.com.infratec.repository.UsuarioRepository defined in @EnableJpaRepositories declared on InfraTecJpaConfiguration: Cannot resolve reference to bean 'jpaSharedEM_infratecEntityManagerFactory' while setting bean property 'entityManager'
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
-	... 57 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'usuarioRepository' defined in br.com.infratec.repository.UsuarioRepository defined in @EnableJpaRepositories declared on InfraTecJpaConfiguration: Cannot resolve reference to bean 'jpaSharedEM_infratecEntityManagerFactory' while setting bean property 'entityManager'
-	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
-	... 71 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_infratecEntityManagerFactory': Cannot resolve reference to bean 'infratecEntityManagerFactory' while setting constructor argument
-	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
-	... 85 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
-     1 changesets check sum
-          db/changelog/changelog.sql::7::luiza was: 9:7232b14be6599e578e5f852dd11d545e but is now: 9:2912c30149eb4014dc3202fe89fc7097
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at br.com.infratec.InfratecApplication.main(InfratecApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "tb_departamento" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:467) ~[liquibase-core-4.27.0.jar:na]
+	... 153 common frames omitted
 
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
-	... 97 common frames omitted
-Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
-     1 changesets check sum
-          db/changelog/changelog.sql::7::luiza was: 9:7232b14be6599e578e5f852dd11d545e but is now: 9:2912c30149eb4014dc3202fe89fc7097
+2024-08-19T21:15:23.920-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.changelog                      : Changeset db/changelog/changelog.sql::4::luiza failed, but failOnError was false.  Error: ERROR: relation "tb_departamento" already exists [Failed SQL: (0) CREATE TABLE tb_departamento
+(
+    id              bigserial       NOT NULL,
+    nome            varchar(100) NOT NULL,
+    CONSTRAINT tb_departamento_pk PRIMARY KEY (id)
+)]
+2024-08-19T21:15:23.924-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::5::luiza
+2024-08-19T21:15:23.935-03:00 ERROR 14052 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::5::luiza encountered an exception.
 
-	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:259) ~[liquibase-core-4.27.0.jar:na]
-	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.2.jar:3.3.2]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
-	... 106 common frames omitted
-Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
-     1 changesets check sum
-          db/changelog/changelog.sql::7::luiza was: 9:7232b14be6599e578e5f852dd11d545e but is now: 9:2912c30149eb4014dc3202fe89fc7097
-
-	at liquibase.command.CommandScope.execute(CommandScope.java:257) ~[liquibase-core-4.27.0.jar:na]
+liquibase.exception.DatabaseException: ERROR: column "cargo" of relation "tb_usuario" already exists [Failed SQL: (0) ALTER TABLE tb_usuario ADD cargo varchar(50)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:473) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:80) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:182) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1176) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:764) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:119) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:133) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:122) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:260) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:112) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:110) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:219) ~[liquibase-core-4.27.0.jar:na]
 	at liquibase.Liquibase.lambda$update$0(Liquibase.java:245) ~[liquibase-core-4.27.0.jar:na]
 	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
 	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
@@ -326,209 +302,523 @@ Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.Va
 	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
 	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
 	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:242) ~[liquibase-core-4.27.0.jar:na]
-	... 109 common frames omitted
-Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
-     1 changesets check sum
-          db/changelog/changelog.sql::7::luiza was: 9:7232b14be6599e578e5f852dd11d545e but is now: 9:2912c30149eb4014dc3202fe89fc7097
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.2.jar:3.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4414) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at br.com.infratec.InfratecApplication.main(InfratecApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: org.postgresql.util.PSQLException: ERROR: column "cargo" of relation "tb_usuario" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:467) ~[liquibase-core-4.27.0.jar:na]
+	... 153 common frames omitted
 
-	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:358) ~[liquibase-core-4.27.0.jar:na]
-	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92) ~[liquibase-core-4.27.0.jar:na]
+2024-08-19T21:15:23.941-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.changelog                      : Changeset db/changelog/changelog.sql::5::luiza failed, but failOnError was false.  Error: ERROR: column "cargo" of relation "tb_usuario" already exists [Failed SQL: (0) ALTER TABLE tb_usuario ADD cargo varchar(50)]
+2024-08-19T21:15:23.944-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::6::luiza
+2024-08-19T21:15:23.965-03:00 ERROR 14052 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::6::luiza encountered an exception.
+
+liquibase.exception.DatabaseException: ERROR: more than one row returned by a subquery used as an expression [Failed SQL: (0) INSERT INTO tb_usuario (nome, login, senha, email, data_inclusao, login_inclusao, cargo, id_departamento)
+VALUES (
+           'Administrador',          
+           'admin',                  
+           '1234',                   
+           'admin@example.com',      
+           CURRENT_TIMESTAMP,        
+           'admin',                  
+           'Administrador',          
+           (SELECT id FROM tb_departamento WHERE nome = 'Administração') 
+       )]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:473) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:80) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:182) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1176) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:764) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:119) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:133) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:122) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:260) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:112) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:110) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105) ~[liquibase-core-4.27.0.jar:na]
 	at liquibase.command.CommandScope.execute(CommandScope.java:219) ~[liquibase-core-4.27.0.jar:na]
-	... 125 common frames omitted
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:245) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1436) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:234) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:212) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:297) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:249) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:242) ~[liquibase-core-4.27.0.jar:na]
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.2.jar:3.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4414) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at br.com.infratec.InfratecApplication.main(InfratecApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: org.postgresql.util.PSQLException: ERROR: more than one row returned by a subquery used as an expression
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:467) ~[liquibase-core-4.27.0.jar:na]
+	... 153 common frames omitted
 
-2024-08-13T21:33:35.730-03:00  INFO 24668 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 24668 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
-2024-08-13T21:33:35.734-03:00  INFO 24668 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
-2024-08-13T21:33:35.852-03:00  INFO 24668 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-13T21:33:35.853-03:00  INFO 24668 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-13T21:33:35.900-03:00  INFO 24668 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
-2024-08-13T21:33:38.793-03:00  INFO 24668 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
-2024-08-13T21:33:38.800-03:00  INFO 24668 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
-2024-08-13T21:33:39.378-03:00  INFO 24668 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
-2024-08-13T21:33:39.379-03:00  INFO 24668 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
-2024-08-13T21:33:39.952-03:00  INFO 24668 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
-2024-08-13T21:33:41.576-03:00  INFO 24668 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-13T21:33:41.751-03:00  INFO 24668 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 3 JPA repository interfaces.
-2024-08-13T21:33:42.978-03:00  INFO 24668 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T21:33:42.992-03:00  INFO 24668 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T21:33:42.992-03:00  INFO 24668 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T21:33:43.054-03:00  INFO 24668 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T21:33:43.055-03:00  INFO 24668 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2221 ms
-2024-08-13T21:33:43.575-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
-2024-08-13T21:33:44.085-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:33:44.158-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
-2024-08-13T21:33:44.161-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:33:44.176-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2024-08-13T21:33:44.177-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.util                           : Run:                          0
-2024-08-13T21:33:44.177-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               6
-2024-08-13T21:33:44.177-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
-2024-08-13T21:33:44.177-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
-2024-08-13T21:33:44.177-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            6
-2024-08-13T21:33:44.179-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
-2024-08-13T21:33:44.227-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2024-08-13T21:33:44.231-03:00  INFO 24668 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
-2024-08-13T21:33:44.354-03:00  INFO 24668 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-13T21:33:44.490-03:00  INFO 24668 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-13T21:33:44.571-03:00  INFO 24668 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-13T21:33:45.141-03:00  INFO 24668 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-13T21:33:45.192-03:00  INFO 24668 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-13T21:33:45.238-03:00  INFO 24668 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d730838
-2024-08-13T21:33:45.241-03:00  INFO 24668 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-13T21:33:45.294-03:00  WARN 24668 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-13T21:33:46.844-03:00  INFO 24668 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-13T21:33:46.849-03:00  INFO 24668 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:33:47.530-03:00  INFO 24668 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-08-13T21:33:47.531-03:00  WARN 24668 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-08-13T21:33:47.774-03:00  INFO 24668 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-08-13T21:33:48.343-03:00  INFO 24668 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
-2024-08-13T21:33:48.343-03:00  INFO 24668 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@69aa16c6]}
-2024-08-13T21:33:48.350-03:00  INFO 24668 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
-2024-08-13T21:33:48.575-03:00  INFO 24668 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-13T21:33:48.678-03:00  INFO 24668 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-13T21:33:48.692-03:00  INFO 24668 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 14.076 seconds (process running for 15.302)
-2024-08-13T21:35:51.779-03:00  INFO 24668 --- [infratec] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:35:51.781-03:00  INFO 24668 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-13T21:35:51.792-03:00  INFO 24668 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-13T21:36:23.765-03:00  INFO 28540 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 28540 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
-2024-08-13T21:36:23.767-03:00  INFO 28540 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
-2024-08-13T21:36:23.817-03:00  INFO 28540 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-13T21:36:23.817-03:00  INFO 28540 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-13T21:36:23.841-03:00  INFO 28540 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
-2024-08-13T21:36:25.681-03:00  INFO 28540 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
-2024-08-13T21:36:25.689-03:00  INFO 28540 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
-2024-08-13T21:36:26.082-03:00  INFO 28540 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
-2024-08-13T21:36:26.083-03:00  INFO 28540 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
-2024-08-13T21:36:26.592-03:00  INFO 28540 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
-2024-08-13T21:36:28.045-03:00  INFO 28540 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-13T21:36:28.185-03:00  INFO 28540 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
-2024-08-13T21:36:29.292-03:00  INFO 28540 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T21:36:29.306-03:00  INFO 28540 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T21:36:29.306-03:00  INFO 28540 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T21:36:29.367-03:00  INFO 28540 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T21:36:29.367-03:00  INFO 28540 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1965 ms
-2024-08-13T21:36:29.870-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
-2024-08-13T21:36:30.274-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:36:30.323-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
-2024-08-13T21:36:30.326-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:36:30.336-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2024-08-13T21:36:30.337-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.util                           : Run:                          0
-2024-08-13T21:36:30.337-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               6
-2024-08-13T21:36:30.337-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
-2024-08-13T21:36:30.337-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
-2024-08-13T21:36:30.337-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            6
-2024-08-13T21:36:30.338-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
-2024-08-13T21:36:30.370-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2024-08-13T21:36:30.373-03:00  INFO 28540 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
-2024-08-13T21:36:30.450-03:00  INFO 28540 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-13T21:36:30.519-03:00  INFO 28540 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-13T21:36:30.572-03:00  INFO 28540 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-13T21:36:30.953-03:00  INFO 28540 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-13T21:36:30.980-03:00  INFO 28540 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-13T21:36:31.021-03:00  INFO 28540 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e895a9a
-2024-08-13T21:36:31.023-03:00  INFO 28540 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-13T21:36:31.052-03:00  WARN 28540 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-13T21:36:32.139-03:00  INFO 28540 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-13T21:36:32.143-03:00  INFO 28540 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:36:32.747-03:00  INFO 28540 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-08-13T21:36:32.748-03:00  WARN 28540 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-08-13T21:36:32.946-03:00  INFO 28540 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-08-13T21:36:33.428-03:00  INFO 28540 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
-2024-08-13T21:36:33.429-03:00  INFO 28540 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@1bd04aef]}
-2024-08-13T21:36:33.432-03:00  INFO 28540 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
-2024-08-13T21:36:33.669-03:00  INFO 28540 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-13T21:36:33.758-03:00  INFO 28540 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-13T21:36:33.768-03:00  INFO 28540 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 10.545 seconds (process running for 11.71)
-2024-08-13T21:36:44.881-03:00  INFO 28540 --- [infratec] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:36:44.883-03:00  INFO 28540 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-13T21:36:44.894-03:00  INFO 28540 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-13T21:36:49.116-03:00  INFO 24728 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 24728 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
-2024-08-13T21:36:49.119-03:00  INFO 24728 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
-2024-08-13T21:36:49.169-03:00  INFO 24728 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-13T21:36:49.170-03:00  INFO 24728 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-13T21:36:49.192-03:00  INFO 24728 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
-2024-08-13T21:36:51.185-03:00  INFO 24728 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
-2024-08-13T21:36:51.190-03:00  INFO 24728 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
-2024-08-13T21:36:51.589-03:00  INFO 24728 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
-2024-08-13T21:36:51.591-03:00  INFO 24728 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
-2024-08-13T21:36:52.096-03:00  INFO 24728 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
-2024-08-13T21:36:53.649-03:00  INFO 24728 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-13T21:36:53.814-03:00  INFO 24728 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 3 JPA repository interfaces.
-2024-08-13T21:36:54.989-03:00  INFO 24728 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T21:36:55.002-03:00  INFO 24728 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T21:36:55.003-03:00  INFO 24728 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T21:36:55.069-03:00  INFO 24728 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T21:36:55.070-03:00  INFO 24728 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2097 ms
-2024-08-13T21:36:55.525-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
-2024-08-13T21:36:55.956-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:36:56.050-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2024-08-13T21:36:56.053-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.command                        : Using deploymentId: 3595816052
-2024-08-13T21:36:56.055-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:36:56.063-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::7::luiza
-2024-08-13T21:36:56.104-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:36:56.108-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::7::luiza ran successfully in 44ms
-2024-08-13T21:36:56.125-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2024-08-13T21:36:56.125-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.util                           : Run:                          1
-2024-08-13T21:36:56.125-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               6
-2024-08-13T21:36:56.125-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
-2024-08-13T21:36:56.125-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
-2024-08-13T21:36:56.125-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            7
-2024-08-13T21:36:56.126-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
-2024-08-13T21:36:56.130-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.command                        : Update command completed successfully.
-2024-08-13T21:36:56.130-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 1
-2024-08-13T21:36:56.138-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2024-08-13T21:36:56.141-03:00  INFO 24728 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
-2024-08-13T21:36:56.246-03:00  INFO 24728 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-13T21:36:56.315-03:00  INFO 24728 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-13T21:36:56.365-03:00  INFO 24728 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-13T21:36:56.756-03:00  INFO 24728 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-13T21:36:56.784-03:00  INFO 24728 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-13T21:36:56.823-03:00  INFO 24728 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ae95448
-2024-08-13T21:36:56.824-03:00  INFO 24728 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-13T21:36:56.852-03:00  WARN 24728 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-13T21:36:57.932-03:00  INFO 24728 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-13T21:36:57.936-03:00  INFO 24728 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:36:58.519-03:00  INFO 24728 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-08-13T21:36:58.520-03:00  WARN 24728 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-08-13T21:36:58.721-03:00  INFO 24728 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-08-13T21:36:59.194-03:00  INFO 24728 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
-2024-08-13T21:36:59.195-03:00  INFO 24728 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@13020a88]}
-2024-08-13T21:36:59.199-03:00  INFO 24728 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
-2024-08-13T21:36:59.370-03:00  INFO 24728 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-13T21:36:59.476-03:00  INFO 24728 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-13T21:36:59.487-03:00  INFO 24728 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 10.882 seconds (process running for 12.057)
-2024-08-13T21:41:16.253-03:00  INFO 24728 --- [infratec] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:41:16.256-03:00  INFO 24728 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-13T21:41:16.266-03:00  INFO 24728 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-13T21:41:21.907-03:00  INFO 26976 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 26976 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
-2024-08-13T21:41:21.910-03:00  INFO 26976 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
-2024-08-13T21:41:21.968-03:00  INFO 26976 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-13T21:41:21.968-03:00  INFO 26976 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-13T21:41:21.996-03:00  INFO 26976 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
-2024-08-13T21:41:24.099-03:00  INFO 26976 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
-2024-08-13T21:41:24.104-03:00  INFO 26976 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
-2024-08-13T21:41:24.517-03:00  INFO 26976 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
-2024-08-13T21:41:24.518-03:00  INFO 26976 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
-2024-08-13T21:41:25.036-03:00  INFO 26976 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
-2024-08-13T21:41:26.681-03:00  INFO 26976 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-13T21:41:26.826-03:00  INFO 26976 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 3 JPA repository interfaces.
-2024-08-13T21:41:28.062-03:00  INFO 26976 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T21:41:28.089-03:00  INFO 26976 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T21:41:28.089-03:00  INFO 26976 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T21:41:28.159-03:00  INFO 26976 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T21:41:28.159-03:00  INFO 26976 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2171 ms
-2024-08-13T21:41:28.658-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
-2024-08-13T21:41:29.090-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:41:29.186-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2024-08-13T21:41:29.189-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.command                        : Using deploymentId: 3596089189
-2024-08-13T21:41:29.192-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-08-13T21:41:29.201-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::7::luiza
-2024-08-13T21:41:29.249-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.changelog                      : Custom SQL executed
-2024-08-13T21:41:29.256-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::7::luiza ran successfully in 52ms
-2024-08-13T21:41:29.268-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::8::luiza
-2024-08-13T21:41:29.288-03:00 ERROR 26976 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::8::luiza encountered an exception.
+2024-08-19T21:15:23.972-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.changelog                      : Changeset db/changelog/changelog.sql::6::luiza failed, but failOnError was false.  Error: ERROR: more than one row returned by a subquery used as an expression [Failed SQL: (0) INSERT INTO tb_usuario (nome, login, senha, email, data_inclusao, login_inclusao, cargo, id_departamento)
+VALUES (
+           'Administrador',          
+           'admin',                  
+           '1234',                   
+           'admin@example.com',      
+           CURRENT_TIMESTAMP,        
+           'admin',                  
+           'Administrador',          
+           (SELECT id FROM tb_departamento WHERE nome = 'Administração') 
+       )]
+2024-08-19T21:15:23.977-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::7::luiza
+2024-08-19T21:15:23.991-03:00 ERROR 14052 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::7::luiza encountered an exception.
+
+liquibase.exception.DatabaseException: ERROR: relation "tb_chamado" already exists [Failed SQL: (0) CREATE TABLE tb_chamado
+(
+    id              bigserial       NOT NULL,
+    nome            varchar(100) NOT NULL,
+    descricao            varchar(500) NOT NULL,
+    telefone            varchar(11) NOT NULL,
+    prioridade            int NOT NULL,
+    id_usuario_criacao            int NOT NULL,
+    id_usuario_responsavel            int NOT NULL,
+    data_inclusao   timestamp    NOT NULL,
+    data_alteracao   timestamp    NOT NULL,
+    CONSTRAINT tb_chamado_pk PRIMARY KEY (id)
+)]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:473) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:80) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:182) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1176) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:764) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:119) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:133) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:122) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:260) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:112) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:110) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:219) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:245) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1436) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:234) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:212) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:297) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:249) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:242) ~[liquibase-core-4.27.0.jar:na]
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.2.jar:3.3.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4414) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at br.com.infratec.InfratecApplication.main(InfratecApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "tb_chamado" already exists
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:341) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:326) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:467) ~[liquibase-core-4.27.0.jar:na]
+	... 153 common frames omitted
+
+2024-08-19T21:15:23.998-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.changelog                      : Changeset db/changelog/changelog.sql::7::luiza failed, but failOnError was false.  Error: ERROR: relation "tb_chamado" already exists [Failed SQL: (0) CREATE TABLE tb_chamado
+(
+    id              bigserial       NOT NULL,
+    nome            varchar(100) NOT NULL,
+    descricao            varchar(500) NOT NULL,
+    telefone            varchar(11) NOT NULL,
+    prioridade            int NOT NULL,
+    id_usuario_criacao            int NOT NULL,
+    id_usuario_responsavel            int NOT NULL,
+    data_inclusao   timestamp    NOT NULL,
+    data_alteracao   timestamp    NOT NULL,
+    CONSTRAINT tb_chamado_pk PRIMARY KEY (id)
+)]
+2024-08-19T21:15:24.003-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::8::luiza
+2024-08-19T21:15:24.031-03:00 ERROR 14052 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::8::luiza encountered an exception.
 
 liquibase.exception.DatabaseException: ERROR: relation "tb_chamado_pk" already exists [Failed SQL: (0) CREATE TABLE tb_comentario
 (
-    id              serial       NOT NULL,
+    id              bigserial       NOT NULL,
     descricao            varchar(1000) NOT NULL,
     id_chamado            int NOT NULL,
     data_inclusao   timestamp    NOT NULL,
@@ -702,45 +992,45 @@ Caused by: org.postgresql.util.PSQLException: ERROR: relation "tb_chamado_pk" al
 	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:467) ~[liquibase-core-4.27.0.jar:na]
 	... 153 common frames omitted
 
-2024-08-13T21:41:29.303-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.changelog                      : Changeset db/changelog/changelog.sql::8::luiza failed, but failOnError was false.  Error: ERROR: relation "tb_chamado_pk" already exists [Failed SQL: (0) CREATE TABLE tb_comentario
+2024-08-19T21:15:24.039-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.changelog                      : Changeset db/changelog/changelog.sql::8::luiza failed, but failOnError was false.  Error: ERROR: relation "tb_chamado_pk" already exists [Failed SQL: (0) CREATE TABLE tb_comentario
 (
-    id              serial       NOT NULL,
+    id              bigserial       NOT NULL,
     descricao            varchar(1000) NOT NULL,
     id_chamado            int NOT NULL,
     data_inclusao   timestamp    NOT NULL,
     data_alteracao   timestamp    NOT NULL,
     CONSTRAINT tb_chamado_pk PRIMARY KEY (id)
 )]
-2024-08-13T21:41:29.314-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2024-08-13T21:41:29.315-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.util                           : Run:                          2
-2024-08-13T21:41:29.315-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               6
-2024-08-13T21:41:29.315-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
-2024-08-13T21:41:29.315-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
-2024-08-13T21:41:29.315-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            8
-2024-08-13T21:41:29.316-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
-2024-08-13T21:41:29.320-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.command                        : Update command completed successfully.
-2024-08-13T21:41:29.320-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 1
-2024-08-13T21:41:29.331-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2024-08-13T21:41:29.334-03:00  INFO 26976 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
-2024-08-13T21:41:29.483-03:00  INFO 26976 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-13T21:41:29.573-03:00  INFO 26976 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-13T21:41:29.629-03:00  INFO 26976 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-13T21:41:30.106-03:00  INFO 26976 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-13T21:41:30.153-03:00  INFO 26976 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-13T21:41:30.202-03:00  INFO 26976 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ff5596d
-2024-08-13T21:41:30.204-03:00  INFO 26976 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-13T21:41:30.242-03:00  WARN 26976 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-13T21:41:32.035-03:00  INFO 26976 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-13T21:41:32.041-03:00  INFO 26976 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T21:41:33.157-03:00  INFO 26976 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-08-13T21:41:33.159-03:00  WARN 26976 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-08-13T21:41:33.407-03:00  INFO 26976 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-08-13T21:41:33.971-03:00  INFO 26976 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
-2024-08-13T21:41:33.972-03:00  INFO 26976 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@65f6c986]}
-2024-08-13T21:41:33.977-03:00  INFO 26976 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
-2024-08-13T21:41:34.270-03:00  INFO 26976 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-13T21:41:34.396-03:00  INFO 26976 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-13T21:41:34.403-03:00  INFO 26976 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 13.011 seconds (process running for 14.349)
-2024-08-13T22:05:00.534-03:00  INFO 26976 --- [infratec] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-08-13T22:05:00.543-03:00  INFO 26976 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-13T22:05:00.551-03:00  INFO 26976 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-19T21:15:24.054-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2024-08-19T21:15:24.055-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.util                           : Run:                          5
+2024-08-19T21:15:24.055-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               3
+2024-08-19T21:15:24.055-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
+2024-08-19T21:15:24.055-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
+2024-08-19T21:15:24.055-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            8
+2024-08-19T21:15:24.057-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
+2024-08-19T21:15:24.062-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.command                        : Update command completed successfully.
+2024-08-19T21:15:24.062-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 1
+2024-08-19T21:15:24.076-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2024-08-19T21:15:24.079-03:00  INFO 14052 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
+2024-08-19T21:15:24.226-03:00  INFO 14052 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-19T21:15:24.389-03:00  INFO 14052 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-19T21:15:24.475-03:00  INFO 14052 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-19T21:15:24.984-03:00  INFO 14052 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-19T21:15:25.023-03:00  INFO 14052 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-19T21:15:25.065-03:00  INFO 14052 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@fce8383
+2024-08-19T21:15:25.067-03:00  INFO 14052 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-19T21:15:25.115-03:00  WARN 14052 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-19T21:15:26.579-03:00  INFO 14052 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-19T21:15:26.583-03:00  INFO 14052 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19T21:15:27.207-03:00  INFO 14052 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-08-19T21:15:27.208-03:00  WARN 14052 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-19T21:15:27.494-03:00  INFO 14052 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-08-19T21:15:28.023-03:00  INFO 14052 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
+2024-08-19T21:15:28.023-03:00  INFO 14052 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@437dc328]}
+2024-08-19T21:15:28.027-03:00  INFO 14052 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
+2024-08-19T21:15:28.212-03:00  INFO 14052 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-19T21:15:28.374-03:00  INFO 14052 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-19T21:15:28.393-03:00  INFO 14052 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 15.453 seconds (process running for 17.393)
+2024-08-19T22:02:28.675-03:00  INFO 14052 --- [infratec] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19T22:02:28.761-03:00  INFO 14052 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-19T22:02:28.777-03:00  INFO 14052 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
