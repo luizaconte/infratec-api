@@ -8,6 +8,7 @@ import org.mapstruct.ReportingPolicy;
 
 @Mapper(
         componentModel = "spring",
+        uses = {DepartamentoDTOMapper.class},
         unmappedTargetPolicy = ReportingPolicy.IGNORE,
         injectionStrategy = InjectionStrategy.CONSTRUCTOR
 )

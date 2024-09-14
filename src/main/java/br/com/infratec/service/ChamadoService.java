@@ -1,10 +1,8 @@
 package br.com.infratec.service;
 
 import br.com.infratec.dto.PageRequestDTO;
-import br.com.infratec.exception.ZCException;
 import br.com.infratec.model.TbChamado;
 import br.com.infratec.repository.ChamadoRepository;
-import br.com.infratec.util.JwtService;
 import br.com.infratec.util.rsql.CustomRsqlVisitor;
 import cz.jirutka.rsql.parser.RSQLParser;
 import org.apache.commons.lang3.StringUtils;
@@ -13,7 +11,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
