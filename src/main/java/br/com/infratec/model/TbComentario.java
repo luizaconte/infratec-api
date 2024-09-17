@@ -4,16 +4,24 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.validation.constraints.Size;
 import java.time.Instant;
 
-@Data
-@EqualsAndHashCode(callSuper = true)
+
+@Getter
+@Setter
 
 @Entity
 @Table(name = "tb_comentario")
-public class TbComentario extends Identifiable {
+public class TbComentario {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
 
     @Size(max = 1000)
     @Column(name = "descricao", length = 1000)

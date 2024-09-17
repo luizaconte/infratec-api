@@ -2,15 +2,19 @@ package br.com.infratec.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.Value;
+import lombok.extern.jackson.Jacksonized;
 
+import java.io.Serializable;
 import java.time.Instant;
 
-@Data
+@Value
 @Builder
-public class ComentarioDTO {
+@Jacksonized
+public class ComentarioDTO implements Serializable {
 
-    private Long id;
-    private String descricao;
-    private Instant dataInclusao;
-    private Instant dataAlteracao;
+    Long id;
+    String descricao;
+    Instant dataInclusao;
+    Instant dataAlteracao;
 }

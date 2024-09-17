@@ -3,23 +3,27 @@ package br.com.infratec.dto;
 import br.com.infratec.enums.Prioridade;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Value;
+import lombok.extern.jackson.Jacksonized;
 
+import java.io.Serializable;
 import java.time.Instant;
 import java.util.Set;
 
-@Data
+@Value
 @Builder
-public class ChamadoDTO {
+@Jacksonized
+public class ChamadoDTO implements Serializable {
 
-    private Long id;
-    private String nome;
-    private String descricao;
-    private String telefone;
-    private Prioridade prioridade;
-    private UsuarioDTO usuarioCriacao;
-    private UsuarioDTO usuarioResponsavel;
-    private Set<ComentarioDTO> comentarios;
-    private Instant dataInclusao;
-    private Instant dataAlteracao;
+    Long id;
+    String nome;
+    String descricao;
+    String telefone;
+    Prioridade prioridade;
+    UsuarioDTO usuarioCriacao;
+    UsuarioDTO usuarioResponsavel;
+    Set<ComentarioDTO> comentarios;
+    Instant dataInclusao;
+    Instant dataAlteracao;
 
 }

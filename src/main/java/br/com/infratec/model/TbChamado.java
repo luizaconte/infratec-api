@@ -4,20 +4,23 @@ import br.com.infratec.enums.Prioridade;
 import br.com.infratec.model.converters.PrioridadeConverter;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 
 import javax.validation.constraints.Size;
 import java.time.Instant;
 import java.util.Set;
 
-@Data
-@EqualsAndHashCode(callSuper = true)
+@Getter
+@Setter
 
 @Entity
 @Table(name = "tb_chamado")
-public class TbChamado extends Identifiable {
+public class TbChamado {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Long id;
 
     @Size(max = 100)
     @Column(name = "nome", nullable = false, length = 100)

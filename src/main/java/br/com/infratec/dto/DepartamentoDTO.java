@@ -1,12 +1,15 @@
 package br.com.infratec.dto;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
+import lombok.extern.jackson.Jacksonized;
 
-@Data
+import java.io.Serializable;
+
+@Value
 @Builder
-public class DepartamentoDTO {
+@Jacksonized
+public class DepartamentoDTO implements Serializable {
 
-    private Long id;
-    private String nome;
+    Long id;
+    String nome;
 }
