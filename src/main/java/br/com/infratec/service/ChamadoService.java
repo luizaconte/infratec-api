@@ -47,6 +47,11 @@ public class ChamadoService {
     }
 
     public void salvar(TbChamado tbChamado) {
+        processarChamado(tbChamado);
         chamadoRepository.save(tbChamado);
+    }
+
+    private void processarChamado(TbChamado chamado) {
+        chamado.getComentarios().forEach(c -> c.setChamado(chamado));
     }
 }
