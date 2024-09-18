@@ -1,7 +1,6 @@
 package br.com.infratec.dto;
 
 import lombok.Builder;
-import lombok.Data;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
 

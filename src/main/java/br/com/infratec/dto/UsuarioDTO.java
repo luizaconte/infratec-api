@@ -1,5 +1,6 @@
 package br.com.infratec.dto;
 
+import br.com.infratec.enums.TipoUsuario;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Builder;
@@ -30,6 +31,8 @@ public class UsuarioDTO implements Serializable {
     @NotNull
     @Size(max = 100)
     String email;
+
+    TipoUsuario tipo;
 
     Instant dataInclusao;
 

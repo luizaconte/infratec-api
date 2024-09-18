@@ -2,7 +2,6 @@ package br.com.infratec.dto;
 
 import br.com.infratec.enums.Prioridade;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
 

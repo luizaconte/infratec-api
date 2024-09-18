@@ -1,5 +1,7 @@
 package br.com.infratec.model;
 
+import br.com.infratec.enums.TipoUsuario;
+import br.com.infratec.model.converters.TipoUsuarioConverter;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -42,6 +44,10 @@ public class TbUsuario {
     @NotNull
     @Column(name = "email", nullable = false, length = 100)
     private String email;
+
+    @Convert(converter = TipoUsuarioConverter.class)
+    @Column(name = "tipo", nullable = false)
+    private TipoUsuario tipo;
 
     @NotNull
     @Column(name = "data_inclusao", nullable = false, updatable = false)

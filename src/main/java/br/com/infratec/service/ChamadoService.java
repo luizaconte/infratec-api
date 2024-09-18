@@ -48,6 +48,7 @@ public class ChamadoService {
 
     public void salvar(TbChamado tbChamado) {
         processarChamado(tbChamado);
+        tbChamado.setDataInclusao(Instant.now());
         chamadoRepository.save(tbChamado);
     }
 
