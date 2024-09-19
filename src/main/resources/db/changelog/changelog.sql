@@ -77,7 +77,7 @@ VALUES ('Administração');
 INSERT INTO tb_usuario (nome, login, senha, email, tipo, data_inclusao, login_inclusao, cargo, id_departamento)
 VALUES ('Administrador', -- Nome do usuário
         'admin', -- Login do usuário
-        '1234', -- Senha do usuário (não criptografada, isso deve ser feito em produção)
+        '$2a$10$pFk60XJnFVgBDkz2iNbNeua62IbAh9oF.4TwnndqJrs6V3t.eZdn6', -- Senha do usuário (não criptografada, isso deve ser feito em produção)
         'admin@example.com', -- Email do usuário
         0,
         CURRENT_TIMESTAMP, -- Data de inclusão
