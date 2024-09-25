@@ -65,7 +65,8 @@ public class UsuarioController {
     @PostMapping
     @Operation(summary = "Salva um novo usuário")
     public ResponseEntity<Void> salvar(@RequestBody @Valid UsuarioDTO usuarioDTO) {
-        usuarioService.salvar(mapper.toEntity(usuarioDTO));
+        var entity = mapper.toEntity(usuarioDTO.getId(), usuarioDTO);
+        usuarioService.salvar(entity);
         return ResponseEntity.ok().build();
     }
 

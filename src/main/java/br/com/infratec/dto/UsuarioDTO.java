@@ -47,6 +47,7 @@ public class UsuarioDTO implements Serializable {
     @Size(max = 128)
     String accessKey;
 
+    @NotNull
     DepartamentoDTO departamento;
 
 }

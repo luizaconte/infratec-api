@@ -1,5 +1,6 @@
 package br.com.infratec.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import lombok.extern.jackson.Jacksonized;
 
@@ -11,5 +12,7 @@ import java.io.Serializable;
 public class DepartamentoDTO implements Serializable {
 
     Long id;
+
+    @NotNull
     String nome;
 }

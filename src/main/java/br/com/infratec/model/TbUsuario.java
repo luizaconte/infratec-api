@@ -66,8 +66,11 @@ public class TbUsuario {
     private String loginAlteracao;
 
     @NotNull
+    @Column(name = "id_departamento", nullable = false)
+    private Long idDepartamento;
+
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "id_departamento", nullable = false)
+    @JoinColumn(name = "id_departamento", nullable = false, insertable = false, updatable = false)
     private TbDepartamento departamento;
 
 }
