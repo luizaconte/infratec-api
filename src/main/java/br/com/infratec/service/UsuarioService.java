@@ -64,4 +64,8 @@ public class UsuarioService {
             throw new ZCException("O login fornecido já existe. Verifique!");
         }
     }
+
+    public void excluir(Integer idUsuario) {
+        usuarioRepository.deleteById(idUsuario);
+    }
 }

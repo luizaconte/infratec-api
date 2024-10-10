@@ -57,7 +57,7 @@ public class UsuarioController {
 
     @PutMapping("/{id}")
     @Operation(summary = "Atualiza o usuário")
-    public ResponseEntity<UsuarioDTO> update(@PathVariable("id") Integer id, @RequestBody @Valid UsuarioDTO usuarioDTO) {
+    public ResponseEntity<Void> update(@PathVariable("id") Integer id, @RequestBody @Valid UsuarioDTO usuarioDTO) {
         usuarioService.atualizar(mapper.toEntity(id, usuarioDTO));
         return ResponseEntity.ok().build();
     }
@@ -67,6 +67,13 @@ public class UsuarioController {
     public ResponseEntity<Void> salvar(@RequestBody @Valid UsuarioDTO usuarioDTO) {
         var entity = mapper.toEntity(usuarioDTO.getId(), usuarioDTO);
         usuarioService.salvar(entity);
+        return ResponseEntity.ok().build();
+    }
+
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Apagar o usuário pelo id")
+    public ResponseEntity<Void> delete(@PathVariable("id") Integer id) {
+        usuarioService.excluir(id);
         return ResponseEntity.ok().build();
     }
 
