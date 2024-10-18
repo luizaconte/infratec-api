@@ -108,4 +108,9 @@ public class JwtService {
         InfraTecAuthentication authentication = (InfraTecAuthentication) SecurityContextHolder.getContext().getAuthentication();
         return authentication.getPrincipal().getName();
     }
+
+    public static Integer getId() {
+        InfraTecAuthentication authentication = (InfraTecAuthentication) SecurityContextHolder.getContext().getAuthentication();
+        return authentication.getPrincipal().getUserId();
+    }
 }

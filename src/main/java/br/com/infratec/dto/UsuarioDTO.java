@@ -32,6 +32,7 @@ public class UsuarioDTO implements Serializable {
     @Size(max = 100)
     String email;
 
+    @NotNull
     TipoUsuario tipo;
 
     Instant dataInclusao;

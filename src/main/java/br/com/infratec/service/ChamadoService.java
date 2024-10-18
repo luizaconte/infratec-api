@@ -2,7 +2,9 @@ package br.com.infratec.service;
 
 import br.com.infratec.dto.PageRequestDTO;
 import br.com.infratec.model.TbChamado;
+import br.com.infratec.model.TbUsuario;
 import br.com.infratec.repository.ChamadoRepository;
+import br.com.infratec.util.JwtService;
 import br.com.infratec.util.rsql.CustomRsqlVisitor;
 import cz.jirutka.rsql.parser.RSQLParser;
 import org.apache.commons.lang3.StringUtils;
@@ -19,12 +21,14 @@ import java.util.Optional;
 @Service
 public class ChamadoService {
     private final ChamadoRepository chamadoRepository;
+    private final UsuarioService usuarioService;
     private final RSQLParser rsqlParser;
     private final CustomRsqlVisitor<TbChamado> chamadoCustomRsqlVisitor = new CustomRsqlVisitor<>();
 
     @Autowired
-    public ChamadoService(ChamadoRepository chamadoRepository, RSQLParser rsqlParser) {
+    public ChamadoService(ChamadoRepository chamadoRepository, UsuarioService usuarioService, RSQLParser rsqlParser) {
         this.chamadoRepository = chamadoRepository;
+        this.usuarioService = usuarioService;
         this.rsqlParser = rsqlParser;
     }
 
@@ -33,6 +37,7 @@ public class ChamadoService {
     }
 
     public Page<TbChamado> findAll(PageRequestDTO pageRequestDTO) {
+        // TODO- filtro tipo usuario
         Sort sort = pageRequestDTO.getSortArgument();
         if (StringUtils.isBlank(pageRequestDTO.getQuery())) {
             return chamadoRepository.findAll(PageRequest.of(pageRequestDTO.getPageIndex(), pageRequestDTO.getPageSize(), sort));
@@ -53,6 +58,8 @@ public class ChamadoService {
     }
 
     private void processarChamado(TbChamado chamado) {
+        Optional<TbUsuario> usuario = usuarioService.findById(JwtService.getId());
+        usuario.ifPresent(chamado::setUsuarioCriacao);
         chamado.getComentarios().forEach(c -> c.setChamado(chamado));
     }
 }

@@ -53,7 +53,7 @@ public class UsuarioService {
         usuarioRepository.save(tbUsuario);
     }
 
-    public void salvar(TbUsuario tbUsuario)  {
+    public void salvar(TbUsuario tbUsuario) {
         Optional<TbUsuario> optionalTbUsuario = usuarioRepository.findByLogin(tbUsuario.getLogin());
         if (optionalTbUsuario.isEmpty()) {
             tbUsuario.setDataInclusao(Instant.now());
@@ -66,6 +66,7 @@ public class UsuarioService {
     }
 
     public void excluir(Integer idUsuario) {
+        // validar se tem chamados TODO
         usuarioRepository.deleteById(idUsuario);
     }
 }

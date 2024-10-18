@@ -1,23 +1,27 @@
-2024-10-02T21:19:09.486-03:00  INFO 2340 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 2340 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by silva in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
-2024-10-02T21:19:09.503-03:00  INFO 2340 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
-2024-10-02T21:19:09.582-03:00  INFO 2340 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-02T21:19:09.583-03:00  INFO 2340 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-02T21:19:09.657-03:00  INFO 2340 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
-2024-10-02T21:19:15.337-03:00  INFO 2340 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : There are already Docker Compose services running, skipping startup
-2024-10-02T21:19:17.238-03:00  INFO 2340 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-02T21:19:17.663-03:00  INFO 2340 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 401 ms. Found 5 JPA repository interfaces.
-2024-10-02T21:19:22.309-03:00  INFO 2340 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-10-02T21:19:22.331-03:00  INFO 2340 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-02T21:19:22.332-03:00  INFO 2340 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-10-02T21:19:22.427-03:00  INFO 2340 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-02T21:19:22.427-03:00  INFO 2340 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7076 ms
-2024-10-02T21:19:23.498-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
-2024-10-02T21:19:24.305-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-10-02T21:19:24.480-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2024-10-02T21:19:24.485-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.command                        : Using deploymentId: 7914764485
-2024-10-02T21:19:24.490-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
-2024-10-02T21:19:24.500-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::8::luiza
-2024-10-02T21:19:24.607-03:00 ERROR 2340 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::8::luiza encountered an exception.
+2024-10-17T21:12:18.350-03:00  INFO 14696 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Starting InfratecApplication using Java 21.0.2 with PID 14696 (C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\target\classes started by luiza in C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec)
+2024-10-17T21:12:18.378-03:00  INFO 14696 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : The following 1 profile is active: "D"
+2024-10-17T21:12:18.462-03:00  INFO 14696 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-17T21:12:18.463-03:00  INFO 14696 --- [infratec] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-17T21:12:18.501-03:00  INFO 14696 --- [infratec] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file 'C:\Users\silva\OneDrive\Área de Trabalho\Laura TCC\infratec\compose.yaml'
+2024-10-17T21:12:26.342-03:00  INFO 14696 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Created
+2024-10-17T21:12:29.423-03:00  INFO 14696 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Starting
+2024-10-17T21:12:31.959-03:00  INFO 14696 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Started
+2024-10-17T21:12:31.960-03:00  INFO 14696 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Waiting
+2024-10-17T21:12:32.969-03:00  INFO 14696 --- [infratec] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container infratec_db  Healthy
+2024-10-17T21:12:36.693-03:00  INFO 14696 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-17T21:12:36.957-03:00  INFO 14696 --- [infratec] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 249 ms. Found 5 JPA repository interfaces.
+2024-10-17T21:12:38.539-03:00  INFO 14696 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-10-17T21:12:38.558-03:00  INFO 14696 --- [infratec] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-17T21:12:38.559-03:00  INFO 14696 --- [infratec] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-10-17T21:12:38.646-03:00  INFO 14696 --- [infratec] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-17T21:12:38.647-03:00  INFO 14696 --- [infratec] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4503 ms
+2024-10-17T21:12:39.710-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.database                       : Set default schema name to public
+2024-10-17T21:12:40.438-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2024-10-17T21:12:40.569-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2024-10-17T21:12:40.572-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.command                        : Using deploymentId: 9210360572
+2024-10-17T21:12:40.576-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2024-10-17T21:12:40.587-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changelog.sql::8::luiza
+2024-10-17T21:12:40.688-03:00 ERROR 14696 --- [infratec] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changelog.sql::8::luiza encountered an exception.
 
 liquibase.exception.DatabaseException: ERROR: relation "tb_chamado_pk" already exists [Failed SQL: (0) CREATE TABLE tb_comentario
 (
@@ -146,7 +150,8 @@ liquibase.exception.DatabaseException: ERROR: relation "tb_chamado_pk" already e
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
 	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
@@ -154,7 +159,8 @@ liquibase.exception.DatabaseException: ERROR: relation "tb_chamado_pk" already e
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
 	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
@@ -193,9 +199,9 @@ Caused by: org.postgresql.util.PSQLException: ERROR: relation "tb_chamado_pk" al
 	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:302) ~[postgresql-42.7.3.jar:42.7.3]
 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:297) ~[postgresql-42.7.3.jar:42.7.3]
 	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:467) ~[liquibase-core-4.27.0.jar:na]
-	... 153 common frames omitted
+	... 155 common frames omitted
 
-2024-10-02T21:19:24.628-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.changelog                      : Changeset db/changelog/changelog.sql::8::luiza failed, but failOnError was false.  Error: ERROR: relation "tb_chamado_pk" already exists [Failed SQL: (0) CREATE TABLE tb_comentario
+2024-10-17T21:12:40.713-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.changelog                      : Changeset db/changelog/changelog.sql::8::luiza failed, but failOnError was false.  Error: ERROR: relation "tb_chamado_pk" already exists [Failed SQL: (0) CREATE TABLE tb_comentario
 (
     id             bigserial     NOT NULL,
     descricao      varchar(1000) NOT NULL,
@@ -204,57 +210,36 @@ Caused by: org.postgresql.util.PSQLException: ERROR: relation "tb_chamado_pk" al
     data_alteracao timestamp     NOT NULL,
     CONSTRAINT tb_chamado_pk PRIMARY KEY (id)
 )]
-2024-10-02T21:19:24.645-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2024-10-02T21:19:24.645-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.util                           : Run:                          1
-2024-10-02T21:19:24.645-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               7
-2024-10-02T21:19:24.645-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
-2024-10-02T21:19:24.645-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
-2024-10-02T21:19:24.645-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            8
-2024-10-02T21:19:24.649-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
-2024-10-02T21:19:24.649-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.command                        : Update command completed successfully.
-2024-10-02T21:19:24.649-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
-2024-10-02T21:19:24.672-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2024-10-02T21:19:24.676-03:00  INFO 2340 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
-2024-10-02T21:19:24.811-03:00  INFO 2340 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-02T21:19:25.011-03:00  INFO 2340 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-10-02T21:19:25.105-03:00  INFO 2340 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-02T21:19:26.433-03:00  INFO 2340 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-02T21:19:26.506-03:00  INFO 2340 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-10-02T21:19:26.584-03:00  INFO 2340 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@607747b9
-2024-10-02T21:19:26.587-03:00  INFO 2340 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-10-02T21:19:26.679-03:00  WARN 2340 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-10-02T21:19:28.924-03:00  INFO 2340 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-02T21:19:28.924-03:00  INFO 2340 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-02T21:19:29.833-03:00  INFO 2340 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-10-02T21:19:29.837-03:00  WARN 2340 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-10-02T21:19:30.177-03:00  INFO 2340 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-10-02T21:19:30.639-03:00  INFO 2340 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
-2024-10-02T21:19:30.639-03:00  INFO 2340 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@6bd93ab3]}
-2024-10-02T21:19:30.639-03:00  INFO 2340 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
-2024-10-02T21:19:30.764-03:00  INFO 2340 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-02T21:19:30.904-03:00  INFO 2340 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-10-02T21:19:30.904-03:00  INFO 2340 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 22.088 seconds (process running for 41.665)
-2024-10-02T21:19:55.830-03:00  INFO 2340 --- [infratec] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-02T21:19:55.830-03:00  INFO 2340 --- [infratec] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-02T21:19:55.830-03:00  INFO 2340 --- [infratec] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-10-02T21:20:38.922-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> br.com.infratec.controller.UsuarioController.salvar(br.com.infratec.dto.UsuarioDTO): [Field error in object 'usuarioDTO' on field 'login': rejected value [null]; codes [NotNull.usuarioDTO.login,NotNull.login,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usuarioDTO.login,login]; arguments []; default message [login]]; default message [não deve ser nulo]] ]
-2024-10-02T21:21:48.545-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
-2024-10-02T21:21:49.953-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
-2024-10-02T22:04:08.683-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
-2024-10-02T22:04:58.241-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : Request method 'DELETE' is not supported
-2024-10-02T22:04:58.258-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2024-10-02T22:05:08.251-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-3] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [departamento] property of the [br.com.infratec.model.TbUsuario] entity was modified, but it won't be updated because the property is immutable.
-2024-10-02T22:05:14.611-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-7] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [departamento] property of the [br.com.infratec.model.TbUsuario] entity was modified, but it won't be updated because the property is immutable.
-2024-10-02T22:05:19.663-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : Request method 'DELETE' is not supported
-2024-10-02T22:05:19.665-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2024-10-02T22:05:48.605-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-5] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [departamento] property of the [br.com.infratec.model.TbUsuario] entity was modified, but it won't be updated because the property is immutable.
-2024-10-02T22:05:56.466-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : Request method 'DELETE' is not supported
-2024-10-02T22:05:56.468-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2024-10-02T22:06:10.959-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-10] o.h.p.entity.AbstractEntityPersister     : HHH000502: The [departamento] property of the [br.com.infratec.model.TbUsuario] entity was modified, but it won't be updated because the property is immutable.
-2024-10-02T22:06:19.002-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : Request method 'DELETE' is not supported
-2024-10-02T22:06:19.005-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2024-10-02T22:06:25.583-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : Request method 'DELETE' is not supported
-2024-10-02T22:06:25.584-03:00  WARN 2340 --- [infratec] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2024-10-02T22:13:20.518-03:00  INFO 2340 --- [infratec] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-02T22:13:20.518-03:00  INFO 2340 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-10-02T22:13:20.536-03:00  INFO 2340 --- [infratec] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-17T21:12:40.726-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2024-10-17T21:12:40.726-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.util                           : Run:                          1
+2024-10-17T21:12:40.726-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.util                           : Previously run:               7
+2024-10-17T21:12:40.726-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.util                           : Filtered out:                 0
+2024-10-17T21:12:40.726-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.util                           : -------------------------------
+2024-10-17T21:12:40.726-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.util                           : Total change sets:            8
+2024-10-17T21:12:40.729-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.util                           : Update summary generated
+2024-10-17T21:12:40.737-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.command                        : Update command completed successfully.
+2024-10-17T21:12:40.738-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2024-10-17T21:12:40.749-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2024-10-17T21:12:40.753-03:00  INFO 14696 --- [infratec] [restartedMain] liquibase.command                        : Command execution complete
+2024-10-17T21:12:40.879-03:00  INFO 14696 --- [infratec] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-17T21:12:41.069-03:00  INFO 14696 --- [infratec] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-17T21:12:41.163-03:00  INFO 14696 --- [infratec] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-17T21:12:41.927-03:00  INFO 14696 --- [infratec] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-17T21:12:41.972-03:00  INFO 14696 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-17T21:12:42.046-03:00  INFO 14696 --- [infratec] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b8906cd
+2024-10-17T21:12:42.047-03:00  INFO 14696 --- [infratec] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-17T21:12:42.102-03:00  WARN 14696 --- [infratec] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-17T21:12:43.863-03:00  INFO 14696 --- [infratec] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-17T21:12:43.867-03:00  INFO 14696 --- [infratec] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-17T21:12:44.589-03:00  INFO 14696 --- [infratec] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-10-17T21:12:44.590-03:00  WARN 14696 --- [infratec] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-10-17T21:12:44.974-03:00  INFO 14696 --- [infratec] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-10-17T21:12:45.543-03:00  INFO 14696 --- [infratec] [restartedMain] i.g.p.rsql.RSQLJPAAutoConfiguration      : RSQLJPAAutoConfiguration.rsqlCommonSupport(entityManagerMap:1)
+2024-10-17T21:12:45.544-03:00  INFO 14696 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : 1 EntityManager bean is found: {jpaSharedEM_AWC_infratecEntityManagerFactory=Shared EntityManager proxy for target factory [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean@4e985de5]}
+2024-10-17T21:12:45.558-03:00  INFO 14696 --- [infratec] [restartedMain] i.g.perplexhub.rsql.RSQLCommonSupport    : RSQLCommonSupport [6.0.5]  is initialized
+2024-10-17T21:12:45.746-03:00  INFO 14696 --- [infratec] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-17T21:12:45.902-03:00  INFO 14696 --- [infratec] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-10-17T21:12:45.915-03:00  INFO 14696 --- [infratec] [restartedMain] br.com.infratec.InfratecApplication      : Started InfratecApplication in 28.207 seconds (process running for 30.075)
+2024-10-17T21:13:13.507-03:00  INFO 14696 --- [infratec] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-17T21:13:13.507-03:00  INFO 14696 --- [infratec] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-17T21:13:13.509-03:00  INFO 14696 --- [infratec] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

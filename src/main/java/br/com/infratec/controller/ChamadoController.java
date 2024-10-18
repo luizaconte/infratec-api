@@ -36,7 +36,6 @@ public class ChamadoController {
     @GetMapping
     public ResponseEntity<PageResponseDTO> getAll(@Valid PageRequestDTO pageRequestDTO) {
         Page<TbChamado> result = chamadoService.findAll(pageRequestDTO);
-
         final List<ChamadoDTO> dtos = result
                 .getContent()
                 .stream()
