@@ -1,6 +1,6 @@
 package br.com.infratec.security;
 
-import br.com.infratec.exception.ZCException;
+import br.com.infratec.exception.InfratecException;
 import br.com.infratec.model.TbUsuarioChave;
 import br.com.infratec.repository.UsuarioChaveRepository;
 import br.com.infratec.util.JwtService;
@@ -54,7 +54,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             TbUsuarioChave grUsuarioKey = usuarioChaveRepository.findByChavePublica(jwtService.extractAccessKey(jwt));
             try {
                 jwtService.verifyToken(jwt, grUsuarioKey.getChavePrivada());
-            } catch (ZCException e) {
+            } catch (InfratecException e) {
                 return;
             }
 

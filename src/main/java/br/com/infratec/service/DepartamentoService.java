@@ -1,7 +1,7 @@
 package br.com.infratec.service;
 
 import br.com.infratec.dto.PageRequestDTO;
-import br.com.infratec.exception.ZCException;
+import br.com.infratec.exception.InfratecException;
 import br.com.infratec.model.TbDepartamento;
 import br.com.infratec.repository.DepartamentoRepository;
 import br.com.infratec.util.rsql.CustomRsqlVisitor;
@@ -50,7 +50,7 @@ public class DepartamentoService {
         if (optionalTbDepartamento.isEmpty()) {
             departamentoRepository.save(tbDepartamento);
         } else {
-            throw new ZCException("O departamento fornecido já existe. Verifique!");
+            throw new InfratecException("O departamento fornecido já existe. Verifique!");
         }
     }
 }

@@ -17,12 +17,12 @@ import java.util.List;
 
 import static org.springframework.data.jpa.repository.query.QueryUtils.toOrders;
 
-public class ZCSimpleJpaRepository<E, ID extends Serializable> extends SimpleJpaRepository<E, ID> implements ZCJpaSpecificationExecutor<E, ID> {
+public class InfratecSimpleJpaRepository<E, ID extends Serializable> extends SimpleJpaRepository<E, ID> implements InfratecJpaSpecificationExecutor<E, ID> {
 
     private final EntityManager entityManager;
     private final JpaEntityInformation<E, ID> entityInformation;
 
-    public ZCSimpleJpaRepository(JpaEntityInformation<E, ID> entityInformation, EntityManager entityManager) {
+    public InfratecSimpleJpaRepository(JpaEntityInformation<E, ID> entityInformation, EntityManager entityManager) {
         super(entityInformation, entityManager);
         this.entityManager = entityManager;
         this.entityInformation = entityInformation;

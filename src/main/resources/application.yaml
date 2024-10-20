@@ -66,14 +66,6 @@ logging:
   file:
     name: infratec.log
 
-br:
-  com:
-    zc:
-      swagger:
-        name: @project.name@
-        version: @project.version@
-        description: @project.description@
-
 server:
   compression:
     enabled: true

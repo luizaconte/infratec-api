@@ -1,7 +1,7 @@
 package br.com.infratec.service;
 
 import br.com.infratec.dto.PageRequestDTO;
-import br.com.infratec.exception.ZCException;
+import br.com.infratec.exception.InfratecException;
 import br.com.infratec.model.TbUsuario;
 import br.com.infratec.repository.UsuarioRepository;
 import br.com.infratec.util.JwtService;
@@ -48,7 +48,6 @@ public class UsuarioService {
 
     public void atualizar(TbUsuario tbUsuario) {
         tbUsuario.setDataAlteracao(Instant.now());
-        // TODO - ver senha
         tbUsuario.setLoginAlteracao(JwtService.getLogin());
         usuarioRepository.save(tbUsuario);
     }
@@ -61,7 +60,7 @@ public class UsuarioService {
             tbUsuario.setLoginInclusao(JwtService.getLogin());
             usuarioRepository.save(tbUsuario);
         } else {
-            throw new ZCException("O login fornecido já existe. Verifique!");
+            throw new InfratecException("O login fornecido já existe. Verifique!");
         }
     }
 

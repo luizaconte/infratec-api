@@ -1,9 +1,11 @@
 package br.com.infratec.service;
 
 import br.com.infratec.dto.PageRequestDTO;
+import br.com.infratec.enums.TipoUsuario;
 import br.com.infratec.model.TbChamado;
 import br.com.infratec.model.TbUsuario;
 import br.com.infratec.repository.ChamadoRepository;
+import br.com.infratec.security.InfraTecAuthentication;
 import br.com.infratec.util.JwtService;
 import br.com.infratec.util.rsql.CustomRsqlVisitor;
 import cz.jirutka.rsql.parser.RSQLParser;
@@ -13,6 +15,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
@@ -38,6 +41,15 @@ public class ChamadoService {
 
     public Page<TbChamado> findAll(PageRequestDTO pageRequestDTO) {
         // TODO- filtro tipo usuario
+        InfraTecAuthentication authentication = (InfraTecAuthentication) SecurityContextHolder.getContext().getAuthentication();
+
+        // validar tipo se tec listar só as dele
+        if (JwtService.getType().equals(TipoUsuario.SUPORTE.getDescricao())) {
+            String query = (StringUtils.isBlank(pageRequestDTO.getQuery()) ? "" : pageRequestDTO.getQuery() + ";")
+                    .concat("(idUsuarioCriacao==" + authentication.getPrincipal().getUserId())
+                    .concat(",idUsuarioResponsavel==" + authentication.getPrincipal().getUserId() + ")");
+            pageRequestDTO.setQuery(query);
+        }
         Sort sort = pageRequestDTO.getSortArgument();
         if (StringUtils.isBlank(pageRequestDTO.getQuery())) {
             return chamadoRepository.findAll(PageRequest.of(pageRequestDTO.getPageIndex(), pageRequestDTO.getPageSize(), sort));

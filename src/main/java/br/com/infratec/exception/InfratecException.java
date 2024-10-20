@@ -2,29 +2,29 @@ package br.com.infratec.exception;
 
 import org.springframework.http.HttpStatus;
 
-public class ZCException extends RuntimeException {
+public class InfratecException extends RuntimeException {
 
     private HttpStatus status;
 
-    public ZCException() {
+    public InfratecException() {
     }
 
-    public ZCException(String message) {
+    public InfratecException(String message) {
         super(message);
     }
 
-    public ZCException(String message, HttpStatus status) {
+    public InfratecException(String message, HttpStatus status) {
         super(message);
         this.status = status;
     }
 
-    public ZCException(Throwable cause) {
+    public InfratecException(Throwable cause) {
         super(cause);
     }
 
     @Override
     public String toString() {
-        return "FiorilliException: " + getMessage();
+        return "InfatrecException: " + getMessage();
     }
 
     public HttpStatus getStatus() {

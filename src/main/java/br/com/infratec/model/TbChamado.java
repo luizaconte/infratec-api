@@ -39,15 +39,20 @@ public class TbChamado {
     private Prioridade prioridade;
 
     @NotNull
+    @Column(name = "id_usuario_criacao", nullable = false)
+    private Integer idUsuarioCriacao;
+
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "id_usuario_criacao", nullable = false)
+    @JoinColumn(name = "id_usuario_criacao", nullable = false, insertable = false, updatable = false)
     private TbUsuario usuarioCriacao;
 
     @NotNull
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "id_usuario_responsavel", nullable = false)
-    private TbUsuario usuarioResponsavel;
+    @Column(name = "id_usuario_responsavel", nullable = false)
+    private Integer idUsuarioResponsavel;
 
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "id_usuario_responsavel", nullable = false, insertable = false, updatable = false)
+    private TbUsuario usuarioResponsavel;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "chamado", fetch = FetchType.EAGER)
     @ToString.Exclude

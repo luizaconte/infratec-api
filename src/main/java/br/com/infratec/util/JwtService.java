@@ -1,7 +1,7 @@
 package br.com.infratec.util;
 
 import br.com.infratec.dto.UsuarioDTO;
-import br.com.infratec.exception.ZCException;
+import br.com.infratec.exception.InfratecException;
 import br.com.infratec.security.InfraTecAuthentication;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
@@ -22,7 +22,7 @@ import java.util.TimeZone;
 @Service
 public class JwtService {
 
-    private static final String ISSUER = "ZC Sistemas";
+    private static final String ISSUER = "INFRATEC";
     private static final int REQUEST_SECONDS_LIMIT = 60;
 
     private long jwtExpiration = 86400; //1 dia
@@ -41,6 +41,7 @@ public class JwtService {
                 .withSubject(usuario.getLogin())
                 .withClaim("access_key", usuario.getAccessKey())
                 .withClaim("userId", usuario.getId())
+                .withClaim("type", usuario.getTipo().getDescricao())
                 .sign(algorithm);
     }
 
@@ -67,7 +68,7 @@ public class JwtService {
         return (int) seconds > REQUEST_SECONDS_LIMIT;
     }
 
-    public void verifyToken(String token, String privateKey) throws ZCException {
+    public void verifyToken(String token, String privateKey) throws InfratecException {
         try {
             Algorithm algorithm = Algorithm.HMAC256(privateKey);
             JWTVerifier verifier = JWT.require(algorithm)
@@ -75,7 +76,7 @@ public class JwtService {
                     .build();
             verifier.verify(token);
         } catch (JWTVerificationException exception) {
-            throw new ZCException(exception);
+            throw new InfratecException(exception);
         }
     }
 
@@ -112,5 +113,10 @@ public class JwtService {
     public static Integer getId() {
         InfraTecAuthentication authentication = (InfraTecAuthentication) SecurityContextHolder.getContext().getAuthentication();
         return authentication.getPrincipal().getUserId();
+    }
+
+    public static String getType() {
+        InfraTecAuthentication authentication = (InfraTecAuthentication) SecurityContextHolder.getContext().getAuthentication();
+        return authentication.getPrincipal().getType();
     }
 }

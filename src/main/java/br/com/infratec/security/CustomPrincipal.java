@@ -11,8 +11,10 @@ import java.security.Principal;
 @Builder
 public class CustomPrincipal implements Principal {
 
-    private String name;
+    String name;
 
-    private Integer userId;
+    Integer userId;
+
+    String type;
 
 }

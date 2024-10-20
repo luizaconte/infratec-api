@@ -4,7 +4,7 @@ import br.com.infratec.dto.LoginRequestDTO;
 import br.com.infratec.dto.Token;
 import br.com.infratec.dto.TokenBearer;
 import br.com.infratec.dto.UsuarioDTO;
-import br.com.infratec.exception.ZCException;
+import br.com.infratec.exception.InfratecException;
 import br.com.infratec.model.TbUsuario;
 import br.com.infratec.model.TbUsuarioChave;
 import br.com.infratec.repository.UsuarioChaveRepository;
@@ -25,19 +25,20 @@ public class AutenticacaoService {
     private final UsuarioRepository usuarioRepository;
     private final UsuarioChaveRepository usuarioChaveRepository;
     private final JwtService jwtService;
-    private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
 
     @Autowired
-    public AutenticacaoService(UsuarioRepository usuarioRepository, UsuarioChaveRepository usuarioChaveRepository, RSQLParser rsqlParser, PasswordEncoder passwordEncoder, AuthenticationManager authenticationManager) {
+    public AutenticacaoService(UsuarioRepository usuarioRepository,
+                               UsuarioChaveRepository usuarioChaveRepository,
+                               RSQLParser rsqlParser,
+                               AuthenticationManager authenticationManager) {
         this.usuarioRepository = usuarioRepository;
         this.usuarioChaveRepository = usuarioChaveRepository;
-        this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
         this.jwtService = new JwtService();
     }
 
-    public TokenBearer login(LoginRequestDTO loginRequestDTO) throws ZCException {
+    public TokenBearer login(LoginRequestDTO loginRequestDTO) throws InfratecException {
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequestDTO.getUsuario(),
@@ -62,17 +63,17 @@ public class AutenticacaoService {
         return TokenBearer.builder().bearer(publicKey).build();
     }
 
-    public Token autorizar(String chavePublica) throws ZCException {
+    public Token autorizar(String chavePublica) throws InfratecException {
         TbUsuarioChave tbUsuarioChave = recuperarChave(chavePublica);
         if (tbUsuarioChave != null) {
             if (!jwtService.isExpired(tbUsuarioChave.getValidade())) {
                 return gerar(tbUsuarioChave);
             }
         }
-        throw new ZCException("Usuário e/ou senha inválidos.");
+        throw new InfratecException("Usuário e/ou senha inválidos.");
     }
 
-    private Token gerar(TbUsuarioChave tbUsuarioChave) throws ZCException {
+    private Token gerar(TbUsuarioChave tbUsuarioChave) throws InfratecException {
         TbUsuario tbUsuario = usuarioRepository.findByLogin(tbUsuarioChave.getLogin()).orElseThrow();
 
         UsuarioDTO usuarioDTO = UsuarioDTO.builder()
@@ -80,6 +81,7 @@ public class AutenticacaoService {
                 .email(tbUsuario.getEmail())
                 .nome(tbUsuario.getNome())
                 .login(tbUsuario.getLogin())
+                .tipo(tbUsuario.getTipo())
                 .accessKey(tbUsuarioChave.getChavePublica())
                 .build();
 
@@ -91,11 +93,11 @@ public class AutenticacaoService {
     }
 
 
-    public void verificar(String key) throws ZCException {
+    public void verificar(String key) throws InfratecException {
         verificarToken(key);
     }
 
-    public Token atualizar(String token) throws ZCException {
+    public Token atualizar(String token) throws InfratecException {
         String refreshKey = jwtService.extractRefreshKey(token);
         if (refreshKey != null) {
             TbUsuarioChave grUsuarioKey = recuperarChave(refreshKey);
@@ -104,14 +106,14 @@ public class AutenticacaoService {
                 return gerar(grUsuarioKey);
             }
         }
-        throw new ZCException("Token inválido");
+        throw new InfratecException("Token inválido");
     }
 
     public TbUsuarioChave recuperarChave(String chavePublica) {
         return usuarioChaveRepository.findByChavePublica(chavePublica);
     }
 
-    public void verificarToken(String token) throws ZCException {
+    public void verificarToken(String token) throws InfratecException {
         String accessKey = jwtService.extractAccessKey(token);
         if (accessKey != null) {
             TbUsuarioChave grUsuarioKey = recuperarChave(accessKey);
@@ -120,12 +122,12 @@ public class AutenticacaoService {
                 return;
             }
         }
-        throw new ZCException("Token inválido");
+        throw new InfratecException("Token inválido");
 
     }
 
     @Transactional
-    public void logout(String token) throws ZCException {
+    public void logout(String token) throws InfratecException {
         String accessKey = jwtService.extractAccessKey(token);
         usuarioChaveRepository.deleteTbUsuarioChaveByChavePublica(accessKey);
     }

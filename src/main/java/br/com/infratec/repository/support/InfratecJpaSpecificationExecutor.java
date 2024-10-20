@@ -10,7 +10,7 @@ import org.springframework.data.repository.NoRepositoryBean;
 import java.io.Serializable;
 
 @NoRepositoryBean
-public interface ZCJpaSpecificationExecutor<E, ID extends Serializable> extends JpaSpecificationExecutor<E> {
+public interface InfratecJpaSpecificationExecutor<E, ID extends Serializable> extends JpaSpecificationExecutor<E> {
 
     Page<ID> findEntityIds(Pageable pageable);
 

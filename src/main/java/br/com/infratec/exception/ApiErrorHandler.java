@@ -89,9 +89,9 @@ public class ApiErrorHandler extends ResponseEntityExceptionHandler {
         );
     }
 
-    @ExceptionHandler(ZCException.class)
+    @ExceptionHandler(InfratecException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ResponseEntity<ErrorResponseDTO> handleFiorilliException(ZCException e) {
+    public ResponseEntity<ErrorResponseDTO> handleInfratecException(InfratecException e) {
         HttpStatus status = Objects.isNull(e.getStatus()) ? HttpStatus.BAD_REQUEST : e.getStatus();
         return new ResponseEntity<>(
                 ErrorResponseDTO.builder()
