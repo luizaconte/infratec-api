@@ -100,7 +100,7 @@ CREATE TABLE tb_chamado
     id_usuario_criacao     int          NOT NULL,
     id_usuario_responsavel int          NOT NULL,
     data_inclusao          timestamp    NOT NULL,
-    data_alteracao         timestamp    NOT NULL,
+    data_alteracao         timestamp,
     CONSTRAINT tb_chamado_pk PRIMARY KEY (id)
 );
 
@@ -119,7 +119,7 @@ CREATE TABLE tb_comentario
     descricao      varchar(1000) NOT NULL,
     id_chamado     int           NOT NULL,
     data_inclusao  timestamp     NOT NULL,
-    data_alteracao timestamp     NOT NULL,
+    data_alteracao timestamp,
     CONSTRAINT tb_chamado_pk PRIMARY KEY (id)
 );
 

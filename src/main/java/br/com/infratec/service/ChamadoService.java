@@ -19,6 +19,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -71,7 +72,17 @@ public class ChamadoService {
 
     private void processarChamado(TbChamado chamado) {
         Optional<TbUsuario> usuario = usuarioService.findById(JwtService.getId());
-        usuario.ifPresent(chamado::setUsuarioCriacao);
-        chamado.getComentarios().forEach(c -> c.setChamado(chamado));
+        if (usuario.isPresent()) {
+            chamado.setUsuarioCriacao(usuario.get());
+            chamado.setIdUsuarioCriacao(usuario.get().getId());
+        }
+        chamado.getComentarios().forEach(c -> {
+            c.setChamado(chamado);
+            if (Objects.isNull(c.getDataInclusao())) {
+                c.setDataInclusao(Instant.now());
+            } else {
+                c.setDataAlteracao(Instant.now());
+            }
+        });
     }
 }
