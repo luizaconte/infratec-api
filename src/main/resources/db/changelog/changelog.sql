@@ -111,7 +111,6 @@ ALTER TABLE tb_chamado
 
 
 -- changeset luiza:8 failOnError:false
--- preconditions onFail:MARK_RAN onError:HALT
 -- comment: Comentarios do chamado
 CREATE TABLE tb_comentario
 (
@@ -120,7 +119,7 @@ CREATE TABLE tb_comentario
     id_chamado     int           NOT NULL,
     data_inclusao  timestamp     NOT NULL,
     data_alteracao timestamp,
-    CONSTRAINT tb_chamado_pk PRIMARY KEY (id)
+    CONSTRAINT tb_comen_pk PRIMARY KEY (id)
 );
 
 ALTER TABLE tb_comentario
