@@ -12,4 +12,10 @@ import org.mapstruct.ReportingPolicy;
         injectionStrategy = InjectionStrategy.CONSTRUCTOR
 )
 public abstract class ComentarioDTOMapper extends AbstractDTOMapper<ComentarioDTO, TbComentario> {
+
+    @Override
+    public TbComentario toEntity(ComentarioDTO dto) {
+        return toEntity(dto.getId(), dto);
+    }
+
 }

@@ -60,6 +60,7 @@ public class ChamadoService {
     }
 
     public void atualizar(TbChamado tbChamado) {
+        processarChamado(tbChamado);
         tbChamado.setDataAlteracao(Instant.now());
         chamadoRepository.save(tbChamado);
     }
