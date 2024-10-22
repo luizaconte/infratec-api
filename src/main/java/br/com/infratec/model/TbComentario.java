@@ -25,7 +25,7 @@ public class TbComentario {
     @Column(name = "descricao", length = 1000)
     private String descricao;
 
-    @JoinColumn(name = "id_chamado", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "id_chamado", referencedColumnName = "id")
     @ManyToOne(fetch = FetchType.EAGER)
     private TbChamado chamado;
 
