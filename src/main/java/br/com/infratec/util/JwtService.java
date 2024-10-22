@@ -41,7 +41,7 @@ public class JwtService {
                 .withSubject(usuario.getLogin())
                 .withClaim("access_key", usuario.getAccessKey())
                 .withClaim("userId", usuario.getId())
-                .withClaim("type", usuario.getTipo().getDescricao())
+                .withClaim("type", usuario.getTipo().getId())
                 .sign(algorithm);
     }
 
@@ -115,7 +115,7 @@ public class JwtService {
         return authentication.getPrincipal().getUserId();
     }
 
-    public static String getType() {
+    public static Integer getType() {
         InfraTecAuthentication authentication = (InfraTecAuthentication) SecurityContextHolder.getContext().getAuthentication();
         return authentication.getPrincipal().getType();
     }

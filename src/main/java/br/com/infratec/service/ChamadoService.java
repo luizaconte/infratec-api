@@ -45,7 +45,7 @@ public class ChamadoService {
         InfraTecAuthentication authentication = (InfraTecAuthentication) SecurityContextHolder.getContext().getAuthentication();
 
         // validar tipo se tec listar só as dele
-        if (JwtService.getType().equals(TipoUsuario.SUPORTE.getDescricao())) {
+        if (JwtService.getType().equals(TipoUsuario.SUPORTE.getId())) {
             String query = (StringUtils.isBlank(pageRequestDTO.getQuery()) ? "" : pageRequestDTO.getQuery() + ";")
                     .concat("(idUsuarioCriacao==" + authentication.getPrincipal().getUserId())
                     .concat(",idUsuarioResponsavel==" + authentication.getPrincipal().getUserId() + ")");

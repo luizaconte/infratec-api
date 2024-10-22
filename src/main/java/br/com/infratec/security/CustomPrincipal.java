@@ -15,6 +15,6 @@ public class CustomPrincipal implements Principal {
 
     Integer userId;
 
-    String type;
+    Integer type;
 
 }

@@ -10,15 +10,15 @@ public enum TipoUsuario {
     SIMPLES(1, "Acesso Simples"),
     SUPORTE(2, "Suporte");
 
-    private final int id;
+    private final Integer id;
     private final String descricao;
 
-    TipoUsuario(int id, String descricao) {
+    TipoUsuario(Integer id, String descricao) {
         this.id = id;
         this.descricao = descricao;
     }
 
-    public static TipoUsuario of(final int id) {
+    public static TipoUsuario of(final Integer id) {
         return Arrays.stream(TipoUsuario.values()).filter(prioridade -> prioridade.getId() == id).findFirst().orElse(SIMPLES);
     }
 }

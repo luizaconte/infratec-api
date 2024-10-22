@@ -59,7 +59,7 @@ public class SecurityFilter extends OncePerRequestFilter {
         DecodedJWT jwt = JWT.decode(token.substring(AUTHENTICATION_SCHEME.length()).trim());
         return CustomPrincipal.builder()
                 .userId(Integer.parseInt(String.valueOf(jwt.getClaims().get("userId"))))
-                .type(String.valueOf(jwt.getClaims().get("type")))
+                .type(Integer.parseInt(String.valueOf(jwt.getClaims().get("type"))))
                 .name(jwt.getSubject())
                 .build();
     }
